@@ -2,7 +2,7 @@ import pymysql
 import logging
 
 def connect():
-    db = pymysql.connect(host='localhost', user='root', password='', db='fakenewsb', port=3306, charset='utf8mb4')
+    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='fakenewsb', port=3306, charset='utf8mb4')
     return db
 
 
