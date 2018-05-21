@@ -1,0 +1,84 @@
+2018-05-21 14:52:30 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: weibo_fakenews)
+2018-05-21 14:52:30 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 12:04:33) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-05-21 14:52:30 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo_fakenews', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 4, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'scrapylog', 'NEWSPIDER_MODULE': 'weibo_fakenews.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['weibo_fakenews.spiders']}
+2018-05-21 14:52:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-21 14:52:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo_fakenews.middlewares.CookiesMiddleware',
+ 'weibo_fakenews.middlewares.Random_UA',
+ 'weibo_fakenews.middlewares.WeiboFakenewsDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-21 14:52:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-21 14:52:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'weibo_fakenews.pipelines.WeiboFakenewsPipeline']
+2018-05-21 14:52:30 [scrapy.core.engine] INFO: Spider opened
+2018-05-21 14:52:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-21 14:52:30 [fakenews] INFO: Spider opened: fakenews
+2018-05-21 14:52:30 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-21 14:52:30 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/?type=5&status=4&page=600>
+Cookie: ALC=ac%3D0%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D3778491552%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Daa77807174c1d442b88c1a897eb08ee1; LT=1526885004; tgc=TGT-Mzc3ODQ5MTU1Mg==-1526885004-tc-86B5187ECB678AE68D2C0CC7387D0CA7-1; ALF=1558421004; SCF=Ar_IxmoN2k4aTV2dtj3xUnHqpmU2Qu6KplHciQyGWs8Dt1OX8h6rxhmqatnhvEfDpk0fpxsnS823JLJ4JCVhTT0.; SUB=_2A252BhrcDeRhGeVJ7FoV-S_Jzj6IHXVVcgsUrDV_PUNbm9AKLVPFkW9NT8RAC2aVmxxo-QPjuMVVB1J_kd9ksTKr; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW98Vb6BMxbNWLW24e2R0L55NHD95Q0S0MRSh.pSK-EWs4Dqcjci--Ri-2Ei-8Fi--4iK.Xi-2Xi--ciK.4iK.fi--NiKLWiKnXi--fi-z7iKysi--4i-zRi-2p; sso_info=v02m6alo5qztKWRk6ClkJOIpZCUiKWRk6SljpOQpZCTkKWRk5iljpOkpY6TlKWRk5yljpSEpY6DkKWRk5SlkKOApY6EmKWRk6SlkKOgpZCThKadlqWkj5OMt42zoLSOk4S1jZOIwA==; login=81272d1749a34b78139b2ac96fdac143
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <200 http://service.account.weibo.com/?type=5&status=4&page=600>
+Set-Cookie: SER=usrmdinst_7; path=/
+
+2018-05-21 14:52:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://service.account.weibo.com/?type=5&status=4&page=600> (referer: None)
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl660d>
+Cookie: ALC=ac%3D2%26bt%3D1526729853%26cv%3D5.0%26et%3D1558265853%26ic%3D1939507458%26scf%3D%26uid%3D6537324330%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dd097fa3e2348b588c847a9ff85830c5f; LT=1526729853; tgc=TGT-NjUzNzMyNDMzMA==-1526729853-tc-8790910310E9DC7BCF48D94476169F21-1; ALF=1558265853; SCF=AuX-xHDFQ9t39bqWcMqTkmlRxZyGMNXgrFeHwLg-2M09SftZkO98r5j7i7gUJLhr_K3SscUTcnD9gqr3Q8eOFT8.; SUB=_2A252BHwtDeRhGeBL6FUS8irPyDyIHXVVcOrlrDV_PUNbm9AKLU_8kW9NRw-YvWFikGgTjd9D_s62J6fLvCIyq6Tj; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhcFM8z65heQghJJjGrxpm.5NHD95QcSKeNe0zXe0e7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0eEShe0e5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jLOItIyzjLCJp5WpmYO0to2TjLeMs4i0jLOMsA==; login=81272d1749a34b78139b2ac96fdac143; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66we>
+Cookie: ALC=ac%3D19%26bt%3D1526719938%26cv%3D5.0%26et%3D1558255938%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D1%26vs%3D0%26vt%3D2%26es%3D64e4c132e3f8bfb4e2cd10d65743e7ee; LT=1526719938; tgc=TGT-NjUzNzY2MDE2NA==-1526719938-tc-A88195EF0D5944EA9E7260C347C3A03D-1; ALF=1558255938; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0eZMOfHj_HY9s477V3fCFBs7MAKnnZq5XWB377bvVyBI.; SUB=_2A253-5WSDeRhGeBL6FUX9i7NzTiIHXVVcIBarDV_PUNbm9AKLWfikW9NRw-Y2H6QKM4FIPWZwdFDcyeoq4x5OS41; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f34d845f2ab0a4b6999b8de4cd23cb3f; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wf>
+Cookie: ALC=ac%3D0%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D3778491552%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Daa77807174c1d442b88c1a897eb08ee1; LT=1526885004; tgc=TGT-Mzc3ODQ5MTU1Mg==-1526885004-tc-86B5187ECB678AE68D2C0CC7387D0CA7-1; ALF=1558421004; SCF=Ar_IxmoN2k4aTV2dtj3xUnHqpmU2Qu6KplHciQyGWs8Dt1OX8h6rxhmqatnhvEfDpk0fpxsnS823JLJ4JCVhTT0.; SUB=_2A252BhrcDeRhGeVJ7FoV-S_Jzj6IHXVVcgsUrDV_PUNbm9AKLVPFkW9NT8RAC2aVmxxo-QPjuMVVB1J_kd9ksTKr; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW98Vb6BMxbNWLW24e2R0L55NHD95Q0S0MRSh.pSK-EWs4Dqcjci--Ri-2Ei-8Fi--4iK.Xi-2Xi--ciK.4iK.fi--NiKLWiKnXi--fi-z7iKysi--4i-zRi-2p; sso_info=v02m6alo5qztKWRk6ClkJOIpZCUiKWRk6SljpOQpZCTkKWRk5iljpOkpY6TlKWRk5yljpSEpY6DkKWRk5SlkKOApY6EmKWRk6SlkKOgpZCThKadlqWkj5OMt42zoLSOk4S1jZOIwA==; login=81272d1749a34b78139b2ac96fdac143; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wg>
+Cookie: ALC=ac%3D2%26bt%3D1526729851%26cv%3D5.0%26et%3D1558265851%26ic%3D1939507458%26scf%3D%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D3bd4e7221e45b4c15ac3d6d09e74a390; LT=1526729851; tgc=TGT-NjUzNzY1OTk4OA==-1526729851-tc-87459390B0A152C114EBEF0C883E50D3-1; ALF=1558265851; SCF=AgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFD_lM4Kch_iYBTKzMiEQ9fvQ3c_DCN637zk9RTB9mVGI.; SUB=_2A252BHwrDeRhGeBL6FUX9SfFwzSIHXVVcOrjrDV_PUNbm9AKLXCtkW9NRw-YLl1xFR5huSREJDyi4lo0AZNeaHes; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOUuY6ToLiJp5WpmYO0to2TjLeNo5S5jpOguA==; login=609423641c81693ee710ee69b0d0e34c; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wh>
+Cookie: ALC=ac%3D19%26bt%3D1526719938%26cv%3D5.0%26et%3D1558255938%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D1%26vs%3D0%26vt%3D2%26es%3D64e4c132e3f8bfb4e2cd10d65743e7ee; LT=1526719938; tgc=TGT-NjUzNzY2MDE2NA==-1526719938-tc-A88195EF0D5944EA9E7260C347C3A03D-1; ALF=1558255938; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0eZMOfHj_HY9s477V3fCFBs7MAKnnZq5XWB377bvVyBI.; SUB=_2A253-5WSDeRhGeBL6FUX9i7NzTiIHXVVcIBarDV_PUNbm9AKLWfikW9NRw-Y2H6QKM4FIPWZwdFDcyeoq4x5OS41; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f34d845f2ab0a4b6999b8de4cd23cb3f; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wi>
+Cookie: ALC=ac%3D2%26bt%3D1526729851%26cv%3D5.0%26et%3D1558265851%26ic%3D1939507458%26scf%3D%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D3bd4e7221e45b4c15ac3d6d09e74a390; LT=1526729851; tgc=TGT-NjUzNzY1OTk4OA==-1526729851-tc-87459390B0A152C114EBEF0C883E50D3-1; ALF=1558265851; SCF=AgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFD_lM4Kch_iYBTKzMiEQ9fvQ3c_DCN637zk9RTB9mVGI.; SUB=_2A252BHwrDeRhGeBL6FUX9SfFwzSIHXVVcOrjrDV_PUNbm9AKLXCtkW9NRw-YLl1xFR5huSREJDyi4lo0AZNeaHes; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOUuY6ToLiJp5WpmYO0to2TjLeNo5S5jpOguA==; login=609423641c81693ee710ee69b0d0e34c; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wj>
+Cookie: ALC=ac%3D19%26bt%3D1526719938%26cv%3D5.0%26et%3D1558255938%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D1%26vs%3D0%26vt%3D2%26es%3D64e4c132e3f8bfb4e2cd10d65743e7ee; LT=1526719938; tgc=TGT-NjUzNzY2MDE2NA==-1526719938-tc-A88195EF0D5944EA9E7260C347C3A03D-1; ALF=1558255938; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0eZMOfHj_HY9s477V3fCFBs7MAKnnZq5XWB377bvVyBI.; SUB=_2A253-5WSDeRhGeBL6FUX9i7NzTiIHXVVcIBarDV_PUNbm9AKLWfikW9NRw-Y2H6QKM4FIPWZwdFDcyeoq4x5OS41; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f34d845f2ab0a4b6999b8de4cd23cb3f; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wk>
+Cookie: ALC=ac%3D2%26bt%3D1526729853%26cv%3D5.0%26et%3D1558265853%26ic%3D1939507458%26scf%3D%26uid%3D6537324330%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dd097fa3e2348b588c847a9ff85830c5f; LT=1526729853; tgc=TGT-NjUzNzMyNDMzMA==-1526729853-tc-8790910310E9DC7BCF48D94476169F21-1; ALF=1558265853; SCF=AuX-xHDFQ9t39bqWcMqTkmlRxZyGMNXgrFeHwLg-2M09SftZkO98r5j7i7gUJLhr_K3SscUTcnD9gqr3Q8eOFT8.; SUB=_2A252BHwtDeRhGeBL6FUS8irPyDyIHXVVcOrlrDV_PUNbm9AKLU_8kW9NRw-YvWFikGgTjd9D_s62J6fLvCIyq6Tj; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhcFM8z65heQghJJjGrxpm.5NHD95QcSKeNe0zXe0e7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0eEShe0e5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jLOItIyzjLCJp5WpmYO0to2TjLeMs4i0jLOMsA==; login=81272d1749a34b78139b2ac96fdac143; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wl>
+Cookie: ALC=ac%3D0%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D3778491552%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Daa77807174c1d442b88c1a897eb08ee1; LT=1526885004; tgc=TGT-Mzc3ODQ5MTU1Mg==-1526885004-tc-86B5187ECB678AE68D2C0CC7387D0CA7-1; ALF=1558421004; SCF=Ar_IxmoN2k4aTV2dtj3xUnHqpmU2Qu6KplHciQyGWs8Dt1OX8h6rxhmqatnhvEfDpk0fpxsnS823JLJ4JCVhTT0.; SUB=_2A252BhrcDeRhGeVJ7FoV-S_Jzj6IHXVVcgsUrDV_PUNbm9AKLVPFkW9NT8RAC2aVmxxo-QPjuMVVB1J_kd9ksTKr; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW98Vb6BMxbNWLW24e2R0L55NHD95Q0S0MRSh.pSK-EWs4Dqcjci--Ri-2Ei-8Fi--4iK.Xi-2Xi--ciK.4iK.fi--NiKLWiKnXi--fi-z7iKysi--4i-zRi-2p; sso_info=v02m6alo5qztKWRk6ClkJOIpZCUiKWRk6SljpOQpZCTkKWRk5iljpOkpY6TlKWRk5yljpSEpY6DkKWRk5SlkKOApY6EmKWRk6SlkKOgpZCThKadlqWkj5OMt42zoLSOk4S1jZOIwA==; login=81272d1749a34b78139b2ac96fdac143; SER=usrmdinst_7
+
+2018-05-21 14:52:31 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET http://service.account.weibo.com/show?rid=K1CaM7QJl66wm>
+Cookie: ALC=ac%3D2%26bt%3D1526729853%26cv%3D5.0%26et%3D1558265853%26ic%3D1939507458%26scf%3D%26uid%3D6537324330%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dd097fa3e2348b588c847a9ff85830c5f; LT=1526729853; tgc=TGT-NjUzNzMyNDMzMA==-1526729853-tc-8790910310E9DC7BCF48D94476169F21-1; ALF=1558265853; SCF=AuX-xHDFQ9t39bqWcMqTkmlRxZyGMNXgrFeHwLg-2M09SftZkO98r5j7i7gUJLhr_K3SscUTcnD9gqr3Q8eOFT8.; SUB=_2A252BHwtDeRhGeBL6FUS8irPyDyIHXVVcOrlrDV_PUNbm9AKLU_8kW9NRw-YvWFikGgTjd9D_s62J6fLvCIyq6Tj; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhcFM8z65heQghJJjGrxpm.5NHD95QcSKeNe0zXe0e7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0eEShe0e5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jLOItIyzjLCJp5WpmYO0to2TjLeMs4i0jLOMsA==; login=81272d1749a34b78139b2ac96fdac143; SER=usrmdinst_7
+
+2018-05-21 14:52:36 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <302 http://service.account.weibo.com/show?rid=K1CaM7QJl660d>
+Set-Cookie: SUB=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+Set-Cookie: SUBP=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+2018-05-21 14:52:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.sina.com.cn/sso/login.php?url=http%3A%2F%2Fservice.account.weibo.com%2Fshow%3Frid%3DK1CaM7QJl660d&_rand=1526885555.4908&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23> from <GET http://service.account.weibo.com/show?rid=K1CaM7QJl660d>
+2018-05-21 14:52:36 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/sso/login.php?url=http%3A%2F%2Fservice.account.weibo.com%2Fshow%3Frid%3DK1CaM7QJl660d&_rand=1526885555.4908&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Cookie: ALC=ac%3D2%26bt%3D1526729853%26cv%3D5.0%26et%3D1558265853%26ic%3D1939507458%26scf%3D%26uid%3D6537324330%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dd097fa3e2348b588c847a9ff85830c5f; LT=1526729853; tgc=TGT-NjUzNzMyNDMzMA==-1526729853-tc-8790910310E9DC7BCF48D94476169F21-1; ALF=1558265853; SCF=AuX-xHDFQ9t39bqWcMqTkmlRxZyGMNXgrFeHwLg-2M09SftZkO98r5j7i7gUJLhr_K3SscUTcnD9gqr3Q8eOFT8.; SUB=_2A252BHwtDeRhGeBL6FUS8irPyDyIHXVVcOrlrDV_PUNbm9AKLU_8kW9NRw-YvWFikGgTjd9D_s62J6fLvCIyq6Tj; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhcFM8z65heQghJJjGrxpm.5NHD95QcSKeNe0zXe0e7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0eEShe0e5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jLOItIyzjLCJp5WpmYO0to2TjLeMs4i0jLOMsA==; login=81272d1749a34b78139b2ac96fdac143
+
+2018-05-21 14:52:36 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2018-05-21 14:52:36 [scrapy.core.engine] INFO: Closing spider (shutdown)
