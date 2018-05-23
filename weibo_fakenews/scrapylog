@@ -1,0 +1,318 @@
+2018-05-23 13:40:40 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: weibo_fakenews)
+2018-05-23 13:40:40 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 12:04:33) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-05-23 13:40:40 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo_fakenews', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 2.5, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'scrapylog', 'NEWSPIDER_MODULE': 'weibo_fakenews.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['weibo_fakenews.spiders']}
+2018-05-23 13:40:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-23 13:40:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo_fakenews.middlewares.CookiesMiddleware',
+ 'weibo_fakenews.middlewares.Random_UA',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-23 13:40:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-23 13:40:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'weibo_fakenews.pipelines.WeiboFakenewsPipeline']
+2018-05-23 13:40:40 [scrapy.core.engine] INFO: Spider opened
+2018-05-23 13:40:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-23 13:40:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-23 13:40:40 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+Cookie: ALC=ac%3D2%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D6069386789%26vf%3D0%26vs%3D0%26vt%3D0%26es%3De192da54857ef9ecdbf1e3bc3dd3c7f3; LT=1526885004; tgc=TGT-NjA2OTM4Njc4OQ==-1526885004-tc-D60C75B367734F64DDF923A9E4365987-1; ALF=1558421004; SCF=AmA0vfg5BTld92RnB0Svfw7LN9fdlQpiTku-zdcCKp65Q9k7HsrSaG-7NwM31TifCqP9SalVr3ZDuPs0SxKLqCA.; SUB=_2A252BhrcDeRhGeBO7VsS-CjLwzWIHXVVcgsUrDV_PUNbm9AKLXbAkW9NRd0OQIzwWRC-e34NHVdoy6DvsKtAyR1S; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWn0Bv0f7YHk_hy4Dkom3QN5NHD95Qcehq4e0ncS0n4Ws4Dqc_Si--ciKnRiK.pi--Ri-2ciKnpi--fiKy8i-iFi--ciKLhiKn4i--Xi-i2i-27i--NiKLWiKnXi--ciKLhi-8Wi--ciKL2i-2f-s8EIPet; sso_info=v02m6alo5qztKWRk5iljoOgpY6ThKWRk6ClkJOYpY6DhKWRk5SljoSUpZCkiKWRk5iljpSMpY6DpKWRk5ClkKSQpZCTgKWRk5yljpSEpY6DkKWRk5iljpSMpZCUhKWRk5iljpSQpZCTlZCYl4mpnLKZtZqWkL2No4C2jpOMuI2jnLiOkMDA; login=81272d1749a34b78139b2ac96fdac143
+
+2018-05-23 13:40:41 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <302 https://service.account.weibo.com/?type=5&status=4&page=1>
+Set-Cookie: SUB=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+Set-Cookie: SUBP=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+2018-05-23 13:40:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054040.9645&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23> from <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+2018-05-23 13:40:41 [root] ERROR: 已删除无用cookie 13609249748
+NoneType: None
+2018-05-23 13:40:41 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054040.9645&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Cookie: ALC=ac%3D2%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D6069386789%26vf%3D0%26vs%3D0%26vt%3D0%26es%3De192da54857ef9ecdbf1e3bc3dd3c7f3; LT=1526885004; tgc=TGT-NjA2OTM4Njc4OQ==-1526885004-tc-D60C75B367734F64DDF923A9E4365987-1; ALF=1558421004; SCF=AmA0vfg5BTld92RnB0Svfw7LN9fdlQpiTku-zdcCKp65Q9k7HsrSaG-7NwM31TifCqP9SalVr3ZDuPs0SxKLqCA.; SUB=_2A252BhrcDeRhGeBO7VsS-CjLwzWIHXVVcgsUrDV_PUNbm9AKLXbAkW9NRd0OQIzwWRC-e34NHVdoy6DvsKtAyR1S; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWn0Bv0f7YHk_hy4Dkom3QN5NHD95Qcehq4e0ncS0n4Ws4Dqc_Si--ciKnRiK.pi--Ri-2ciKnpi--fiKy8i-iFi--ciKLhiKn4i--Xi-i2i-27i--NiKLWiKnXi--ciKLhi-8Wi--ciKL2i-2f-s8EIPet; sso_info=v02m6alo5qztKWRk5iljoOgpY6ThKWRk6ClkJOYpY6DhKWRk5SljoSUpZCkiKWRk5iljpSMpY6DpKWRk5ClkKSQpZCTgKWRk5yljpSEpY6DkKWRk5iljpSMpZCUhKWRk5iljpSQpZCTlZCYl4mpnLKZtZqWkL2No4C2jpOMuI2jnLiOkMDA; login=81272d1749a34b78139b2ac96fdac143
+
+2018-05-23 13:40:45 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <200 https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054040.9645&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Set-Cookie: tgc=TGT-NjA2OTM4Njc4OQ==-1527054044-tc-72993C843CE53F1721285DDBBBAD820E-1; domain=login.sina.com.cn; path=/; Httponly
+
+Set-Cookie: SUB=_2A252AI6MDeRhGeBO7VsS-CjLwzWIHXVVChLErDV_PUNbm9AKLUnTkW1NRd0OQFE45OOa8wUnxWu5rYtM5nLo6GJk; Path=/; Domain=.sina.com.cn; Expires=Thu, 23 May 2019 05:40:44 GMT; HttpOnly
+
+Set-Cookie: SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWn0Bv0f7YHk_hy4Dkom3QN5NHD95Qcehq4e0ncS0n4Ws4Dqc_Si--ciKnRiK.pi--Ri-2ciKnpi--fiKy8i-iFi--ciKLhiKn4i--Xi-i2i-27i--NiKLWiKnXi--ciKLhi-8Wi--ciKL2i-2f-s8EIPet; path=/; domain=.sina.com.cn
+
+Set-Cookie: ALC=ac%3D2%26bt%3D1527054045%26cv%3D5.0%26et%3D1558590045%26ic%3D1939507458%26scf%3DAmA0vfg5BTld92RnB0Svfw7LN9fdlQpiTku-zdcCKp65Q9k7HsrSaG-7NwM31TifCqP9SalVr3ZDuPs0SxKLqCA.%26uid%3D6069386789%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D2bc5a4c780e46bfe4606f35f636d3694; expires=Thursday, 23-May-2019 05:40:45 GMT; path=/; domain=login.sina.com.cn; httponly
+
+Set-Cookie: ALF=1558590045; expires=Thursday, 23-May-2019 05:40:45 GMT; path=/; domain=.sina.com.cn
+
+Set-Cookie: LT=1527054045; path=/; domain=login.sina.com.cn
+
+2018-05-23 13:40:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590045%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjA2OTM4Njc4OQ%3D%3D-1527054045-tc-D5B69AA6E42CD31B5863C78C9C82F42A-1%26retcode%3D0> from <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054040.9645&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+2018-05-23 13:40:45 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590045%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjA2OTM4Njc4OQ%3D%3D-1527054045-tc-D5B69AA6E42CD31B5863C78C9C82F42A-1%26retcode%3D0>
+Cookie: ALC=ac%3D2%26bt%3D1526885004%26cv%3D5.0%26et%3D1558421004%26ic%3D1939507458%26scf%3D%26uid%3D6069386789%26vf%3D0%26vs%3D0%26vt%3D0%26es%3De192da54857ef9ecdbf1e3bc3dd3c7f3; LT=1526885004; tgc=TGT-NjA2OTM4Njc4OQ==-1526885004-tc-D60C75B367734F64DDF923A9E4365987-1; ALF=1558421004; SCF=AmA0vfg5BTld92RnB0Svfw7LN9fdlQpiTku-zdcCKp65Q9k7HsrSaG-7NwM31TifCqP9SalVr3ZDuPs0SxKLqCA.; SUB=_2A252BhrcDeRhGeBO7VsS-CjLwzWIHXVVcgsUrDV_PUNbm9AKLXbAkW9NRd0OQIzwWRC-e34NHVdoy6DvsKtAyR1S; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWn0Bv0f7YHk_hy4Dkom3QN5NHD95Qcehq4e0ncS0n4Ws4Dqc_Si--ciKnRiK.pi--Ri-2ciKnpi--fiKy8i-iFi--ciKLhiKn4i--Xi-i2i-27i--NiKLWiKnXi--ciKLhi-8Wi--ciKL2i-2f-s8EIPet; sso_info=v02m6alo5qztKWRk5iljoOgpY6ThKWRk6ClkJOYpY6DhKWRk5SljoSUpZCkiKWRk5iljpSMpY6DpKWRk5ClkKSQpZCTgKWRk5yljpSEpY6DkKWRk5iljpSMpZCUhKWRk5iljpSQpZCTlZCYl4mpnLKZtZqWkL2No4C2jpOMuI2jnLiOkMDA; login=81272d1749a34b78139b2ac96fdac143; tgc=TGT-NjA2OTM4Njc4OQ==-1527054044-tc-72993C843CE53F1721285DDBBBAD820E-1; ALC=ac%3D2%26bt%3D1527054045%26cv%3D5.0%26et%3D1558590045%26ic%3D1939507458%26scf%3DAmA0vfg5BTld92RnB0Svfw7LN9fdlQpiTku-zdcCKp65Q9k7HsrSaG-7NwM31TifCqP9SalVr3ZDuPs0SxKLqCA.%26uid%3D6069386789%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D2bc5a4c780e46bfe4606f35f636d3694; LT=1527054045; SUB=_2A252AI6MDeRhGeBO7VsS-CjLwzWIHXVVChLErDV_PUNbm9AKLUnTkW1NRd0OQFE45OOa8wUnxWu5rYtM5nLo6GJk; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWn0Bv0f7YHk_hy4Dkom3QN5NHD95Qcehq4e0ncS0n4Ws4Dqc_Si--ciKnRiK.pi--Ri-2ciKnpi--fiKy8i-iFi--ciKLhiKn4i--Xi-i2i-27i--NiKLWiKnXi--ciKLhi-8Wi--ciKL2i-2f-s8EIPet; ALF=1558590045
+
+2018-05-23 13:40:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590045%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjA2OTM4Njc4OQ%3D%3D-1527054045-tc-D5B69AA6E42CD31B5863C78C9C82F42A-1%26retcode%3D0> (referer: None)
+2018-05-23 13:40:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590045%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjA2OTM4Njc4OQ%3D%3D-1527054045-tc-D5B69AA6E42CD31B5863C78C9C82F42A-1%26retcode%3D0> (referer: None)
+Traceback (most recent call last):
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/mage/scrapyproject/weibo_fakenews/weibo_fakenews/spiders/spider.py", line 34, in parse
+    url = 'http://service.account.weibo.com/' + urls[i]
+IndexError: list index out of range
+2018-05-23 13:40:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-23 13:40:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4815,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 3545,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 23, 5, 40, 47, 300140),
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 65232896,
+ 'memusage/startup': 65232896,
+ 'response_received_count': 1,
+ 'scheduler/dequeued/redis': 3,
+ 'scheduler/enqueued/redis': 3,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2018, 5, 23, 5, 40, 40, 844917)}
+2018-05-23 13:40:47 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-05-23 13:40:56 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: weibo_fakenews)
+2018-05-23 13:40:56 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 12:04:33) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-05-23 13:40:56 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo_fakenews', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 2.5, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'scrapylog', 'NEWSPIDER_MODULE': 'weibo_fakenews.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['weibo_fakenews.spiders']}
+2018-05-23 13:40:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-23 13:40:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo_fakenews.middlewares.CookiesMiddleware',
+ 'weibo_fakenews.middlewares.Random_UA',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-23 13:40:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-23 13:40:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'weibo_fakenews.pipelines.WeiboFakenewsPipeline']
+2018-05-23 13:40:56 [scrapy.core.engine] INFO: Spider opened
+2018-05-23 13:40:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-23 13:40:56 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-23 13:40:56 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+Cookie: ALC=ac%3D2%26bt%3D1526890082%26cv%3D5.0%26et%3D1558426082%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D439bc0eec0aed60b87d783065d0d5b11; LT=1526890082; tgc=TGT-NjUzNzY2MDE2NA==-1526890082-tc-F36B99DC81253310F69C93A1BC3ADCD9-1; ALF=1558426082; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0M4iXniTRIuDaDOgSdq9h24Fv6_juZr3GYFmXsjErkFQ.; SUB=_2A252Bg4yDeRhGeBL6FUX9i7NzTiIHXVVcnj6rDV_PUNbm9AKLVbRkW9NRw-Y2GY60nM4m3hkI078sfMR1fmxhG3w; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f656a41107fa6197509ed6d05b9390fd
+
+2018-05-23 13:40:56 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <302 https://service.account.weibo.com/?type=5&status=4&page=1>
+Set-Cookie: SUB=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+Set-Cookie: SUBP=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+2018-05-23 13:40:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054056.223&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23> from <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+2018-05-23 13:40:56 [root] ERROR: 已删除无用cookie 13859991449
+NoneType: None
+2018-05-23 13:40:56 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054056.223&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Cookie: ALC=ac%3D2%26bt%3D1526890082%26cv%3D5.0%26et%3D1558426082%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D439bc0eec0aed60b87d783065d0d5b11; LT=1526890082; tgc=TGT-NjUzNzY2MDE2NA==-1526890082-tc-F36B99DC81253310F69C93A1BC3ADCD9-1; ALF=1558426082; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0M4iXniTRIuDaDOgSdq9h24Fv6_juZr3GYFmXsjErkFQ.; SUB=_2A252Bg4yDeRhGeBL6FUX9i7NzTiIHXVVcnj6rDV_PUNbm9AKLVbRkW9NRw-Y2GY60nM4m3hkI078sfMR1fmxhG3w; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f656a41107fa6197509ed6d05b9390fd
+
+2018-05-23 13:40:59 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <200 https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054056.223&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Set-Cookie: tgc=TGT-NjUzNzY2MDE2NA==-1527054058-tc-B161A60114AA3EDCF5F179AB34B996CD-1; domain=login.sina.com.cn; path=/; Httponly
+
+Set-Cookie: SUB=_2A252AI66DeRhGeBL6FUX9i7NzTiIHXVVChLyrDV_PUNbm9ANLULRkW1NRw-Y2FOEoK1KO-Qs1EcQDTHao9QZSeBj; Path=/; Domain=.sina.com.cn; Expires=Thu, 23 May 2019 05:40:58 GMT; HttpOnly
+
+Set-Cookie: SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; path=/; domain=.sina.com.cn
+
+Set-Cookie: ALC=ac%3D2%26bt%3D1527054058%26cv%3D5.0%26et%3D1558590058%26ic%3D1939507458%26scf%3DAg4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0M4iXniTRIuDaDOgSdq9h24Fv6_juZr3GYFmXsjErkFQ.%26uid%3D6537660164%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dbe7f5e0f1530276da05aa2405e0ed880; expires=Thursday, 23-May-2019 05:40:58 GMT; path=/; domain=login.sina.com.cn; httponly
+
+Set-Cookie: ALF=1558590058; expires=Thursday, 23-May-2019 05:40:58 GMT; path=/; domain=.sina.com.cn
+
+Set-Cookie: LT=1527054058; path=/; domain=login.sina.com.cn
+
+2018-05-23 13:40:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590058%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY2MDE2NA%3D%3D-1527054058-tc-4C5E20D1DD2DDE31C6EBD2EA39FD60EF-1%26retcode%3D0> from <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054056.223&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+2018-05-23 13:40:59 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590058%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY2MDE2NA%3D%3D-1527054058-tc-4C5E20D1DD2DDE31C6EBD2EA39FD60EF-1%26retcode%3D0>
+Cookie: ALC=ac%3D2%26bt%3D1526890082%26cv%3D5.0%26et%3D1558426082%26ic%3D1939507458%26scf%3D%26uid%3D6537660164%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D439bc0eec0aed60b87d783065d0d5b11; LT=1526890082; tgc=TGT-NjUzNzY2MDE2NA==-1526890082-tc-F36B99DC81253310F69C93A1BC3ADCD9-1; ALF=1558426082; SCF=Ag4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0M4iXniTRIuDaDOgSdq9h24Fv6_juZr3GYFmXsjErkFQ.; SUB=_2A252Bg4yDeRhGeBL6FUX9i7NzTiIHXVVcnj6rDV_PUNbm9AKLVbRkW9NRw-Y2GY60nM4m3hkI078sfMR1fmxhG3w; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOYsIyTmLSJp5WpmYO0to2TjLeNo5iwjJOYtA==; login=f656a41107fa6197509ed6d05b9390fd; tgc=TGT-NjUzNzY2MDE2NA==-1527054058-tc-B161A60114AA3EDCF5F179AB34B996CD-1; ALC=ac%3D2%26bt%3D1527054058%26cv%3D5.0%26et%3D1558590058%26ic%3D1939507458%26scf%3DAg4G3jZ6cYfTJCZePlbgDoxl6V_94DBECz4QIJHqEPQ0M4iXniTRIuDaDOgSdq9h24Fv6_juZr3GYFmXsjErkFQ.%26uid%3D6537660164%26vf%3D0%26vs%3D0%26vt%3D0%26es%3Dbe7f5e0f1530276da05aa2405e0ed880; LT=1527054058; SUB=_2A252AI66DeRhGeBL6FUX9i7NzTiIHXVVChLyrDV_PUNbm9ANLULRkW1NRw-Y2FOEoK1KO-Qs1EcQDTHao9QZSeBj; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5NHD95QcSKeNSoq7eKqXWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qceh2cS5tt; ALF=1558590058
+
+2018-05-23 13:40:59 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2018-05-23 13:40:59 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-05-23 13:41:40 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: weibo_fakenews)
+2018-05-23 13:41:40 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 12:04:33) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-05-23 13:41:40 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo_fakenews', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 2.5, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'scrapylog', 'NEWSPIDER_MODULE': 'weibo_fakenews.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['weibo_fakenews.spiders']}
+2018-05-23 13:41:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-23 13:41:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo_fakenews.middlewares.CookiesMiddleware',
+ 'weibo_fakenews.middlewares.Random_UA',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-23 13:41:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-23 13:41:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'weibo_fakenews.pipelines.WeiboFakenewsPipeline']
+2018-05-23 13:41:40 [scrapy.core.engine] INFO: Spider opened
+2018-05-23 13:41:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-23 13:41:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-23 13:41:40 [scrapy_redis.dupefilter] DEBUG: Filtered duplicate request <GET https://service.account.weibo.com/?type=5&status=4&page=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-05-23 13:41:40 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-23 13:41:40 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 23, 5, 41, 40, 762764),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66846720,
+ 'memusage/startup': 66846720,
+ 'start_time': datetime.datetime(2018, 5, 23, 5, 41, 40, 755860)}
+2018-05-23 13:41:40 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-05-23 13:42:35 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: weibo_fakenews)
+2018-05-23 13:42:35 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 12:04:33) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-05-23 13:42:35 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo_fakenews', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 2.5, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'LOG_FILE': 'scrapylog', 'NEWSPIDER_MODULE': 'weibo_fakenews.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['weibo_fakenews.spiders']}
+2018-05-23 13:42:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-23 13:42:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo_fakenews.middlewares.CookiesMiddleware',
+ 'weibo_fakenews.middlewares.Random_UA',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-23 13:42:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-23 13:42:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'weibo_fakenews.pipelines.WeiboFakenewsPipeline']
+2018-05-23 13:42:35 [scrapy.core.engine] INFO: Spider opened
+2018-05-23 13:42:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-23 13:42:35 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-23 13:42:35 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+Cookie: ALC=ac%3D2%26bt%3D1526890081%26cv%3D5.0%26et%3D1558426081%26ic%3D1939507458%26scf%3D%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D2109c012fa1ac1ff672f9c17c6f4191b; LT=1526890081; tgc=TGT-NjUzNzY1OTk4OA==-1526890081-tc-9688214221A6ECA0AFDA8CB24B8DCC20-1; ALF=1558426081; SCF=AgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFbPKDi15iiYaw2XWWPq5XVz-Upi_pS3J2BIBqBz71DYQ.; SUB=_2A252Bg4xDeRhGeBL6FUX9SfFwzSIHXVVcnj5rDV_PUNbm9AKLWHGkW9NRw-YLlpQ-OZFzi5hcGpEItsICJE-SgGB; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOUuY6ToLiJp5WpmYO0to2TjLeNo5S5jpOguA==; login=2539a3746215f32d05c8100e941e1569
+
+2018-05-23 13:42:35 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <302 https://service.account.weibo.com/?type=5&status=4&page=1>
+Set-Cookie: SUB=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+Set-Cookie: SUBP=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.com
+
+2018-05-23 13:42:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054155.9321&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23> from <GET https://service.account.weibo.com/?type=5&status=4&page=1>
+2018-05-23 13:42:35 [root] ERROR: 已删除无用cookie 16144606536
+NoneType: None
+2018-05-23 13:42:35 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054155.9321&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Cookie: ALC=ac%3D2%26bt%3D1526890081%26cv%3D5.0%26et%3D1558426081%26ic%3D1939507458%26scf%3D%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D2109c012fa1ac1ff672f9c17c6f4191b; LT=1526890081; tgc=TGT-NjUzNzY1OTk4OA==-1526890081-tc-9688214221A6ECA0AFDA8CB24B8DCC20-1; ALF=1558426081; SCF=AgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFbPKDi15iiYaw2XWWPq5XVz-Upi_pS3J2BIBqBz71DYQ.; SUB=_2A252Bg4xDeRhGeBL6FUX9SfFwzSIHXVVcnj5rDV_PUNbm9AKLWHGkW9NRw-YLlpQ-OZFzi5hcGpEItsICJE-SgGB; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOUuY6ToLiJp5WpmYO0to2TjLeNo5S5jpOguA==; login=2539a3746215f32d05c8100e941e1569
+
+2018-05-23 13:42:39 [scrapy.downloadermiddlewares.cookies] DEBUG: Received cookies from: <200 https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054155.9321&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+Set-Cookie: tgc=TGT-NjUzNzY1OTk4OA==-1527054159-tc-A7805F1390E8AC24B5C4B404EB69600C-1; domain=login.sina.com.cn; path=/; Httponly
+
+Set-Cookie: SUB=_2A252AI8fDeRhGeBL6FUX9SfFwzSIHXVVChFXrDV_PUNbm9AKLVeikW1NRw-YLguuB9nQU_4ZaJsvF9RKo2bq12t5; Path=/; Domain=.sina.com.cn; Expires=Thu, 23 May 2019 05:42:39 GMT; HttpOnly
+
+Set-Cookie: SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; path=/; domain=.sina.com.cn
+
+Set-Cookie: ALC=ac%3D2%26bt%3D1527054159%26cv%3D5.0%26et%3D1558590159%26ic%3D1939507458%26scf%3DAgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFbPKDi15iiYaw2XWWPq5XVz-Upi_pS3J2BIBqBz71DYQ.%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D879759686d6aba70df175f29789f963c; expires=Thursday, 23-May-2019 05:42:39 GMT; path=/; domain=login.sina.com.cn; httponly
+
+Set-Cookie: ALF=1558590159; expires=Thursday, 23-May-2019 05:42:39 GMT; path=/; domain=.sina.com.cn
+
+Set-Cookie: LT=1527054159; path=/; domain=login.sina.com.cn
+
+2018-05-23 13:42:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590159%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY1OTk4OA%3D%3D-1527054159-tc-C6A060B3BFAFB4A4A574A3561D88D141-1%26retcode%3D0> from <GET https://login.sina.com.cn/sso/login.php?url=https%3A%2F%2Fservice.account.weibo.com%2F%3Ftype%3D5%26status%3D4%26page%3D1&_rand=1527054155.9321&gateway=1&service=service_account&entry=service_account&useticket=1&returntype=META&sudaref=&_client_version=0.6.23>
+2018-05-23 13:42:39 [scrapy.downloadermiddlewares.cookies] DEBUG: Sending cookies to: <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590159%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY1OTk4OA%3D%3D-1527054159-tc-C6A060B3BFAFB4A4A574A3561D88D141-1%26retcode%3D0>
+Cookie: ALC=ac%3D2%26bt%3D1526890081%26cv%3D5.0%26et%3D1558426081%26ic%3D1939507458%26scf%3D%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D2109c012fa1ac1ff672f9c17c6f4191b; LT=1526890081; tgc=TGT-NjUzNzY1OTk4OA==-1526890081-tc-9688214221A6ECA0AFDA8CB24B8DCC20-1; ALF=1558426081; SCF=AgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFbPKDi15iiYaw2XWWPq5XVz-Upi_pS3J2BIBqBz71DYQ.; SUB=_2A252Bg4xDeRhGeBL6FUX9SfFwzSIHXVVcnj5rDV_PUNbm9AKLWHGkW9NRw-YLlpQ-OZFzi5hcGpEItsICJE-SgGB; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jaOUuY6ToLiJp5WpmYO0to2TjLeNo5S5jpOguA==; login=2539a3746215f32d05c8100e941e1569; tgc=TGT-NjUzNzY1OTk4OA==-1527054159-tc-A7805F1390E8AC24B5C4B404EB69600C-1; ALC=ac%3D2%26bt%3D1527054159%26cv%3D5.0%26et%3D1558590159%26ic%3D1939507458%26scf%3DAgHRyLQim6DJcHVhMv1q92B9l3Ip_HUhQlk-LaHI9SYFbPKDi15iiYaw2XWWPq5XVz-Upi_pS3J2BIBqBz71DYQ.%26uid%3D6537659988%26vf%3D0%26vs%3D0%26vt%3D0%26es%3D879759686d6aba70df175f29789f963c; LT=1527054159; SUB=_2A252AI8fDeRhGeBL6FUX9SfFwzSIHXVVChFXrDV_PUNbm9AKLVeikW1NRw-YLguuB9nQU_4ZaJsvF9RKo2bq12t5; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW3zEwIF30B2RNAHL1yOk2a5NHD95QcSKeNSo-41KnRWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0qf1K.R15tt; ALF=1558590159
+
+2018-05-23 13:42:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590159%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY1OTk4OA%3D%3D-1527054159-tc-C6A060B3BFAFB4A4A574A3561D88D141-1%26retcode%3D0> (referer: None)
+2018-05-23 13:42:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://login.sina.com.cn/crossdomain2.php?action=login&entry=service_account&r=https%3A%2F%2Fpassport.weibo.com%2Fwbsso%2Flogin%3Fssosavestate%3D1558590159%26url%3Dhttps%253A%252F%252Fservice.account.weibo.com%252F%253Ftype%253D5%2526status%253D4%2526page%253D1%26display%3D0%26ticket%3DST-NjUzNzY1OTk4OA%3D%3D-1527054159-tc-C6A060B3BFAFB4A4A574A3561D88D141-1%26retcode%3D0> (referer: None)
+Traceback (most recent call last):
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/mage/scrapyproject/weibo_fakenews/weibo_fakenews/spiders/spider.py", line 34, in parse
+    url = 'http://service.account.weibo.com/' + urls[i]
+IndexError: list index out of range
+2018-05-23 13:42:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-23 13:42:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4349,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 3486,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 23, 5, 42, 43, 16865),
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 65191936,
+ 'memusage/startup': 65191936,
+ 'response_received_count': 1,
+ 'scheduler/dequeued/redis': 3,
+ 'scheduler/enqueued/redis': 3,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2018, 5, 23, 5, 42, 35, 823889)}
+2018-05-23 13:42:43 [scrapy.core.engine] INFO: Spider closed (finished)

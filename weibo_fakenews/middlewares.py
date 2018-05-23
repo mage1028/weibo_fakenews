@@ -7,10 +7,10 @@
 import random
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 from scrapy import signals
-from fakenews.data import agents
+from weibo_fakenews.data import agents
 import re
 import json
-from fakenews.db.myredis import del_cookie, getall_cookies,end_spider
+from weibo_fakenews.db.myredis import del_cookie, getall_cookies,end_spider
 
 class CookiesMiddleware(object):
     def process_request(self, request, spider):
