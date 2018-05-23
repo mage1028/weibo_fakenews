@@ -4,11 +4,11 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from weibo_fakenews.db.mysql_insert import insert_fakenews, insert_comments, insert_author
+from fakenews.db.mysql_insert import insert_fakenews, insert_comments, insert_author
 import time
 import json
 import re
-from weibo_fakenews.spiders.dealtime import deal_time
+from fakenews.spiders.dealtime import deal_time
 
 
 class WeiboFakenewsPipeline(object):

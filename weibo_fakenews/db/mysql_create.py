@@ -7,7 +7,7 @@ def connect():
 
 
 def addTable_weibo():
-    sql = '''create table fakenews(
+    sql = '''create table weibo_fakenews(
     id bigint primary key,
     informers varchar(42),
     informers_counts int,

@@ -1,12 +1,12 @@
 import scrapy
 import re
 from scrapy import Request
-from weibo_fakenews.items import *
+from fakenews.items import *
 import time
 import math
 import json
 from scrapy.selector import Selector
-from weibo_fakenews.spiders.str import dealstr, dealcontent
+from fakenews.spiders.str import dealstr, dealcontent
 import random
 
 import logging
