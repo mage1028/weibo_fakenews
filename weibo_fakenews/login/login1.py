@@ -98,10 +98,4 @@ def getoneCookies(account,password):
 
 if __name__ == '__main__':
 
-    cookies = getCookies(myWeiBo)
-    lens = len(cookies)
-    for i in range(0, lens):
-        account = cookies[i][1]
-        cookie = json.dumps(cookies[i][0])
-        params = [account, cookie]
-        insert_cookie(params)
+    pass

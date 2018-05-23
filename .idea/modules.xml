@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/weibo_fakenews.iml" filepath="$PROJECT_DIR$/.idea/weibo_fakenews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Weibo_FakenewsSpider.iml" filepath="$PROJECT_DIR$/.idea/Weibo_FakenewsSpider.iml" />
     </modules>
   </component>
 </project>
