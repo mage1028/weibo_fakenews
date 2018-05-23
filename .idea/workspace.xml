@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="646738e0-9728-4421-bd03-3a0f031b8222" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo_fakenews/spiders/spider_flightgirl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Weibo_FakenewsSpider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Weibo_Spider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_fakenew\test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_fakenew\test1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_fakenews/login/login1.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_fakenews/login/login1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_fakenews/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_fakenews/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Weibo_Spider$FLIGHT.coverage" NAME="FLIGHT Coverage Results" MODIFIED="1527076523256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weibo_spider" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$login1.coverage" NAME="login1 Coverage Results" MODIFIED="1526613051170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/login" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1526902535865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$mysql_insert.coverage" NAME="mysql_insert Coverage Results" MODIFIED="1525509450032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/db" />
@@ -24,11 +23,13 @@
     <SUITE FILE_PATH="coverage/weibo_fakenews$login2.coverage" NAME="login2 Coverage Results" MODIFIED="1525695299278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/login" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$FAKE__1_.coverage" NAME="FAKE (1) Coverage Results" MODIFIED="1525788003515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$main.coverage" NAME="main Coverage Results" MODIFIED="1527054007141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fakenews" />
+    <SUITE FILE_PATH="coverage/Weibo_Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1527075968517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weibo_spider/weibo_fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$str.coverage" NAME="str Coverage Results" MODIFIED="1525691286455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/spiders" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$FAKE__2_.coverage" NAME="FAKE (2) Coverage Results" MODIFIED="1525789267233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$spider.coverage" NAME="spider Coverage Results" MODIFIED="1526899544630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/spiders" />
-    <SUITE FILE_PATH="coverage/weibo_fakenews$FAKE.coverage" NAME="FAKE Coverage Results" MODIFIED="1526904287762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weibo_fakenews$FAKE.coverage" NAME="FAKE Coverage Results" MODIFIED="1527076628340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weibo_spider" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$redis.coverage" NAME="redis Coverage Results" MODIFIED="1527056279371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/db" />
+    <SUITE FILE_PATH="coverage/Weibo_Spider$py_test_in_fresh_cookies_py.coverage" NAME="py.test in fresh_cookies.py Coverage Results" MODIFIED="1527075842306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weibo_spider/weibo_fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$test.coverage" NAME="test Coverage Results" MODIFIED="1526373192668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$run.coverage" NAME="run Coverage Results" MODIFIED="1526435138497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$main__1_.coverage" NAME="main  Coverage Results" MODIFIED="1527054154855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews" />
@@ -51,31 +52,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_fakenews/login/login1.py">
+      <file leaf-file-name="spider_flightgirl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider_flightgirl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myredis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_fakenews/db/myredis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weibo_fakenews/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>WB_text</find>
       <find>reas</find>
       <find>//*[@class=&quot;con&quot;]/a/</find>
       <find>description</find>
@@ -120,8 +102,9 @@
       <find>f</find>
       <find>Lo</find>
       <find>Log</find>
-      <find>too long</find>
+      <find />
       <find>author</find>
+      <find>json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,11 +133,19 @@
         <option value="$PROJECT_DIR$/weibo_fakenews/pipelines.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/settings.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/db/mysql_create.py" />
-        <option value="$PROJECT_DIR$/weibo_fakenews/db/mysql_insert.py" />
         <option value="$PROJECT_DIR$/fakenews/main.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/main.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/login/login1.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/db/myredis.py" />
+        <option value="$PROJECT_DIR$/weibo_fakenews/db/mysql_insert.py" />
+        <option value="$PROJECT_DIR$/weibo_fakenews/spiders/spider_flightgirl.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/spiders/spider.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/db/mysql_create.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/settings.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/items.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/fresh_cookies.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/test.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/spiders/spider_flightgirl.py" />
       </list>
     </option>
   </component>
@@ -173,7 +164,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -182,7 +173,18 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="weibo_fakenews" type="cbb8eebc:String" user="weibo_fakenews" />
+              <item name="weibo_spider" type="cbb8eebc:String" user="weibo_spider" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="weibo_spider" type="cbb8eebc:String" user="weibo_spider" />
+              <item name="weibo_spider" type="cbb8eebc:String" user="weibo_spider" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="weibo_spider" type="cbb8eebc:String" user="weibo_spider" />
+              <item name="weibo_spider" type="cbb8eebc:String" user="weibo_spider" />
+              <item name="spiders" type="cbb8eebc:String" user="spiders" />
             </path>
           </expand>
           <select />
@@ -192,30 +194,24 @@
         <subPane>
           <expand>
             <path>
-              <item name="Weibo_FakenewsSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
+              <item name="Weibo_Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Weibo_FakenewsSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
+              <item name="Weibo_Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Weibo_FakenewsSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weibo_FakenewsSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
+              <item name="Weibo_Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Weibo_FakenewsSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo_fakenews" type="462c0819:PsiDirectoryNode" />
+              <item name="Weibo_Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo_spider" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -248,16 +244,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.redis">
+  <component name="RunManager" selected="Python.FAKE">
     <configuration name="FAKE" type="PythonConfigurationType" factoryName="Python">
-      <module name="Weibo_FakenewsSpider" />
+      <module name="Weibo_Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../weibo_spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -268,8 +264,27 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="FLIGHT" type="PythonConfigurationType" factoryName="Python">
+      <module name="Weibo_Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../weibo_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="/anaconda3/lib/python3.6/site-packages/scrapy/cmdline.py" />
+      <option name="PARAMETERS" value="crawl flight_girl" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="main " type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Weibo_FakenewsSpider" />
+      <module name="Weibo_Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -287,27 +302,8 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mysql_create" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Weibo_FakenewsSpider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weibo_fakenews/db" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weibo_fakenews/db/mysql_create.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="redis" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Weibo_FakenewsSpider" />
+      <module name="Weibo_Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -326,7 +322,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="test " type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Weibo_FakenewsSpider" />
+      <module name="Weibo_Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -344,19 +340,56 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Weibo_Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../weibo_spider/weibo_fakenews/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="py.test in /Users/mage/scrapyproject/weibo_spider/weibo_fakenews/fresh_cookies.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Weibo_Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../weibo_spider/weibo_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../weibo_spider/weibo_fakenews/fresh_cookies.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
       <item itemvalue="Python.FAKE" />
+      <item itemvalue="Python.FLIGHT" />
       <item itemvalue="Python.test " />
       <item itemvalue="Python.redis" />
-      <item itemvalue="Python.mysql_create" />
       <item itemvalue="Python.main " />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python tests.py.test in /Users/mage/scrapyproject/weibo_spider/weibo_fakenews/fresh_cookies.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python tests.py.test in /Users/mage/scrapyproject/weibo_spider/weibo_fakenews/fresh_cookies.py" />
         <item itemvalue="Python.redis" />
         <item itemvalue="Python.main " />
         <item itemvalue="Python.test " />
-        <item itemvalue="Python.mysql_create" />
       </list>
     </recent_temporary>
   </component>
@@ -373,6 +406,14 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="py_test_in_fresh_cookies_py - 2018.05.23 at 19h 41m 20s.xml">
+      <configuration name="py.test in fresh_cookies.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_fresh_cookies_py - 2018.05.23 at 19h 44m 03s.xml">
+      <configuration name="py.test in fresh_cookies.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -384,22 +425,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32923076" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50061053" side_tool="true" weight="0.3425641" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" visible="true" weight="0.3425641" />
+      <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" weight="0.3425641" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32820514" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -444,25 +484,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo_fakenews/pipelines.py</url>
+          <url>file://$PROJECT_DIR$/../weibo_spider/weibo_spider/pipelines.py</url>
           <line>69</line>
           <option name="timeStamp" value="502" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo_fakenews/spiders/spider.py</url>
+          <url>file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider.py</url>
           <line>121</line>
           <option name="timeStamp" value="503" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo_fakenews/spiders/spider.py</url>
+          <url>file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider.py</url>
           <line>122</line>
           <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider_flightgirl.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="505" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="505" />
+      <option name="time" value="506" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -488,55 +533,48 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.findall(r'W_f18\\&quot;&gt;\d+&lt;', text)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.findall(r'W_f18[\s\S]*?&lt;', text)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.findall(r'W_f18', text)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.findall(r'W_f18&quot;', text)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.findall(r'W_f18\&quot;', text)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/settings.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/login/login2.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/login/login2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/spider.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
@@ -618,7 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/spider3.py" />
     <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/spider2.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
@@ -635,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_fakenews/run.py" />
     <entry file="file://$PROJECT_DIR$/weibo_fakenews/2018051609445100.xml" />
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/test.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
@@ -671,24 +709,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/login/login2.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/login/login2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/str.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapylog">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/scrapylog">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-728" />
       </provider>
@@ -696,44 +724,7 @@
     <entry file="file:///anaconda3/lib/python3.6/site-packages/scrapy/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#168#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/dealtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/db/mysql_select.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/db/mysql_select.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
@@ -743,34 +734,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12966" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/Weibo_FakenewsSpider.iml">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/.idea/Weibo_Spider.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/db/mysql_create.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/db/mysql_insert.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/str.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/db/mysql_insert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+          <caret line="4" column="43" lean-forward="true" selection-end-line="94" selection-end-column="28" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/dealtime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/db/mysql_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_fakenews/fresh_cookies.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#193#283#0" expanded="true" />
@@ -778,41 +823,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/scrapylog">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/scrapylog">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4230" />
+        <state relative-caret-position="-4300" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/spiders/spider.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="241">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#168#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#1#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/db/myredis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" selection-end-line="131" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/login/login1.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/login/login1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/db/myredis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_fakenews/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="43" selection-end-line="101" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider/weibo_spider/spiders/spider_flightgirl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

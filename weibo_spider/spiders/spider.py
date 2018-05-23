@@ -1,19 +1,19 @@
 import scrapy
 import re
 from scrapy import Request
-from weibo_fakenews.items import *
+from weibo_spider.items import *
 import time
 import math
 import json
 from scrapy.selector import Selector
-from weibo_fakenews.spiders.str import dealstr, dealcontent
+from weibo_spider.spiders.str import dealstr, dealcontent
 import random
 
 import logging
 
 
 class FakenewsSpider(scrapy.Spider):
-    name = 'weibo_fakenews'
+    name = 'fakenews'
     urls = []
     for i in range(1, 2):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])

@@ -16,7 +16,6 @@ class WeiboFakenewsItem(scrapy.Item):
     informants = scrapy.Field()
     informants_id = scrapy.Field()
     informers_content = scrapy.Field()
-
     content = scrapy.Field()
 
     forwarded_counts = scrapy.Field()

@@ -3,7 +3,7 @@ import json
 
 
 def connect():
-    db = pymysql.connect(host='localhost', user='root', password='', db='weibo_fakenews', port=3306, charset='utf8mb4')
+    db = pymysql.connect(host='localhost', user='root', password='', db='weibo_spider', port=3306, charset='utf8mb4')
     return db
 
 

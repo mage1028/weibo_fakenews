@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for weibo_fakenews project
+# Scrapy settings for weibo_spider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,15 +9,15 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'weibo_fakenews'
+BOT_NAME = 'weibo_spider'
 
-SPIDER_MODULES = ['weibo_fakenews.spiders']
-NEWSPIDER_MODULE = 'weibo_fakenews.spiders'
+SPIDER_MODULES = ['weibo_spider.spiders']
+NEWSPIDER_MODULE = 'weibo_spider.spiders'
 
 DOWNLOADER_MIDDLEWARES = {
-    # 'weibo_fakenews.middlewares.Random_cookies': 401,
-    'weibo_fakenews.middlewares.Random_UA': 401,
-    'weibo_fakenews.middlewares.CookiesMiddleware': 400,
+    # 'weibo_spider.middlewares.Random_cookies': 401,
+    'weibo_spider.middlewares.Random_UA': 401,
+    'weibo_spider.middlewares.CookiesMiddleware': 400,
 
 }
 FEED_EXPORT_ENCODING = 'utf-8'
@@ -33,7 +33,7 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
 LOG_ENABLED = True
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'weibo_fakenews (+http://www.yourdomain.com)'
+# USER_AGENT = 'weibo_spider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -68,13 +68,13 @@ COOKIES_DEBUG = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'weibo_fakenews.middlewares.WeiboFakenewsSpiderMiddleware': 543,
+#    'weibo_spider.middlewares.WeiboFakenewsSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'weibo_fakenews.middlewares.WeiboFakenewsDownloaderMiddleware': 543,
+#    'weibo_spider.middlewares.WeiboFakenewsDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -86,7 +86,7 @@ COOKIES_DEBUG = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'weibo_fakenews.pipelines.WeiboFakenewsPipeline': 999,
+    'weibo_spider.pipelines.WeiboFakenewsPipeline': 999,
     'scrapy_redis.pipelines.RedisPipeline': 300
 }
 
@@ -112,4 +112,4 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 REDIS_URL = 'redis://@localhost:6379'
 
-LOG_FILE  ="scrapylog"
+# LOG_FILE  ="scrapylog"

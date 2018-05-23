@@ -8,7 +8,7 @@ def connect():
 
 def insert_fakenews(params):
 
-    sql = '''insert into weibo_fakenews(id,
+    sql = '''insert into weibo_spider(id,
     informers,
     informers_counts,
     informants,
@@ -27,7 +27,7 @@ def insert_fakenews(params):
     try:
         cursor.execute(sql, params)
         conn.commit()
-        logging.info('------------------------------insert weibo_fakenews ojbk-----------------------------')
+        logging.info('------------------------------insert weibo_spider ojbk-----------------------------')
     except Exception as e:
         conn.rollback()
         conn.close()

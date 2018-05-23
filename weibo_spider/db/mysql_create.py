@@ -2,12 +2,19 @@ import pymysql
 
 
 def connect():
-    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='fakenewsb', port=3306, charset='utf8mb4')
+    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='fakenewsb', port=3306,
+                         charset='utf8mb4')
+    return db
+
+
+def connect_fgirl():
+    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='Weibo_Flightgirl_Spider', port=3306,
+                         charset='utf8mb4')
     return db
 
 
 def addTable_weibo():
-    sql = '''create table weibo_fakenews(
+    sql = '''create table weibo_spider(
     id bigint primary key,
     informers varchar(42),
     informers_counts int,
@@ -33,7 +40,6 @@ def addTable_weibo():
         conn.close()
 
 
-
 def addTable_comments():
     sql = '''create table comments(
     id bigint,
@@ -56,24 +62,6 @@ def addTable_comments():
         conn.close()
         print(e)
 
-#
-# def addTable_cookies():
-#     sql = '''create table cookies(
-#     account varchar(40),
-#     cookie varchar(300)
-#
-#     )
-#     '''
-#     conn = connect()
-#     cursor = conn.cursor()
-#     try:
-#         cursor.execute(sql)
-#         conn.commit()
-#         print('ojbk')
-#     except Exception as e:
-#         conn.rollback()
-#         conn.close()
-#         print(e)
 
 
 def addTable_author():
@@ -96,8 +84,8 @@ def addTable_author():
         conn.rollback()
         conn.close()
         print(e)
+
 if __name__ == '__main__':
     addTable_weibo()
     addTable_comments()
     addTable_author()
-
