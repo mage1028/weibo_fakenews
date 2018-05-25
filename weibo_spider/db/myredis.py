@@ -34,10 +34,12 @@ def select_account(account):
 def insert_cookie(account):
     r = connect()
     pwd = select_account(account)
-
-    cookie = getoneCookies(account, pwd)[0]
-    cookie = json.dumps(cookie)
-    r.hmset('weibo_cookies', {account: cookie})
+    try:
+        cookie = getoneCookies(account, pwd)[0]
+        cookie = json.dumps(cookie)
+        r.hmset('weibo_cookies', {account: cookie})
+    except:
+        print('----fail----')
 
 
 def fresh_cookie():
