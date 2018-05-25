@@ -12,7 +12,7 @@ import random
 import logging
 
 
-class FakenewsSpider(scrapy.Spider):
+class FakeNewsSpider(scrapy.Spider):
     name = 'fakenews'
     urls = []
     for i in range(1, 2):
@@ -61,7 +61,7 @@ class FakenewsSpider(scrapy.Spider):
                 content = dealstr(content)
                 informers_content.append(content)
 
-            except:
+            except :
                 try:
                     content = re.findall(r'/a>[\s\S]*?</div>', content)[0].strip('/a>').strip('</div>')
                     content = dealstr(content)

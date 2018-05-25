@@ -62,8 +62,11 @@ def del_account(account):
 
 def testcookie(account):
     r = connect()
-    if account in r.hgetall('weibo_cookies'):
-        return True
+    try:
+        if account in r.hgetall('weibo_cookies'):
+            return True
+    except:
+        return False
 
 
 def getall_cookies():

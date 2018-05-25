@@ -18,10 +18,10 @@ class WeiboFakenewsItem(scrapy.Item):
     informers_content = scrapy.Field()
     content = scrapy.Field()
 
-    forwarded_counts = scrapy.Field()
-    comment_counts = scrapy.Field()
-    like_counts = scrapy.Field()
-    informers_counts = scrapy.Field()
+    forwarded_count = scrapy.Field()
+    comment_count = scrapy.Field()
+    like_count = scrapy.Field()
+    informers_count = scrapy.Field()
     informants_time = scrapy.Field()
     reason = scrapy.Field()
 
@@ -32,7 +32,7 @@ class CommentsItem(scrapy.Item):
     author = scrapy.Field()
     author_comment = scrapy.Field()
     flag = scrapy.Field()
-    like_counts = scrapy.Field()
+    like_count = scrapy.Field()
     id = scrapy.Field()
     time = scrapy.Field()
 
@@ -43,4 +43,26 @@ class AuthorItem(scrapy.Item):
     follow_count = scrapy.Field()
     follower_count = scrapy.Field()
     weibo_count = scrapy.Field()
+    verified = scrapy.Field()
+    rank = scrapy.Field()
     description = scrapy.Field()
+
+
+class WeiboItem(scrapy.Item):
+    id = scrapy.Field()
+    author = scrapy.Field()
+    author_id = scrapy.Field()
+    content = scrapy.Field()
+
+    like_count = scrapy.Field()
+    forwarded_count = scrapy.Field()
+    comment_count = scrapy.Field()
+
+    device = scrapy.Field()
+
+    time = scrapy.Field()
+
+
+class ImageItem(scrapy.Field):
+    image_url = scrapy.Field()
+    image_name = scrapy.Field()

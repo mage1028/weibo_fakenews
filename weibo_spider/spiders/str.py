@@ -3,7 +3,6 @@ import re
 from scrapy import Selector
 
 
-
 def list(l):
     l = '941028'.join(l)
     l = l.split()
@@ -43,9 +42,7 @@ def dealcontent(x):
     return x
 
 
-
 def dealstr(s):
-
     # 处理表情
     while '\t' in s:
         s = s.split('\t')
@@ -66,6 +63,10 @@ def dealstr(s):
     while '<br>' in s:
         s = s.split('<br>')
         s = ''.join(s)
+    while '&nbsp' in s:
+        s = s.split('&nbsp')
+        s = ''.join(s)
+
     if re.findall(r'<img[\s\S]*?>', s):
         imgs = re.findall(r'<img[\s\S]*?>', s)
         # 有表情处理表情

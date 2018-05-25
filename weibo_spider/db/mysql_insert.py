@@ -1,21 +1,22 @@
 import pymysql
 import logging
 
+
 def connect():
-    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='fakenewsb', port=3306, charset='utf8mb4')
+    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='Weibo_Flightgirl_Spider', port=3306,
+                         charset='utf8mb4')
     return db
 
 
 def insert_fakenews(params):
-
     sql = '''insert into weibo_spider(id,
     informers,
-    informers_counts,
+    informers_count,
     informants,
     
-    forwarded_counts,
-    comment_counts,
-    like_counts,
+    forwarded_count,
+    comment_count,
+    like_count,
     informers_content,
     reason,
     content,
@@ -31,12 +32,12 @@ def insert_fakenews(params):
     except Exception as e:
         conn.rollback()
         conn.close()
-        # logging.exception(e)
+        logging.info(e)
         logging.info(params)
 
 
 def insert_comments(params):
-    sql = '''insert into comments(id,flag,author,author_comment,like_counts,comment_time) 
+    sql = '''insert into Comments(id,flag,author,author_comment,like_count,comment_time) 
     values (%s,%s,%s,%s,%s,%s)
     '''
     conn = connect()
@@ -48,39 +49,12 @@ def insert_comments(params):
     except Exception as e:
         conn.rollback()
         conn.close()
-        logging.exception(e)
+        logging.info(e)
         logging.info(params)
 
 
-
-def insert_cookie(params):
-    sql='''insert into cookies(account,cookie) values (%s,%s)
-    '''
-    conn=connect()
-    cursor=conn.cursor()
-    try:
-        cursor.execute(sql,params)
-        conn.commit()
-    except Exception as e:
-        conn.rollback()
-        conn.close()
-        logging.exception(e)
-        logging.info(params)
-def delete_cookies(cookie):
-    sql='''delete from cookies where cookie='{0}'
-    '''.format(cookie)
-    conn = connect()
-    cursor = conn.cursor()
-    try:
-        cursor.execute(sql)
-        conn.commit()
-        print('已删除无效cookie')
-    except Exception as e:
-        conn.rollback()
-        conn.close()
-        logging.exception(e)
 def insert_author(params):
-    sql = '''insert into Author(id,name,follow_count,follower_count,weibo_count,description) values (%s,%s,%s,%s,%s,%s)
+    sql = '''insert into Author(id,name,follow_count,follower_count,weibo_count,verified,rank,description) values (%s,%s,%s,%s,%s,%s,%s,%s)
        '''
     conn = connect()
     cursor = conn.cursor()
@@ -91,5 +65,31 @@ def insert_author(params):
     except Exception as e:
         conn.rollback()
         conn.close()
-        logging.exception(e)
+        logging.info(e)
+        logging.info(params)
+
+
+def insert_flightgirl(params):
+    sql = '''insert into FlightGirl_Weibo(
+    id,
+    author,
+    author_id,
+    forwarded_count,
+    comment_count,
+    like_count,
+    content,
+    device,
+    time)
+    values (%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    '''
+    conn = connect()
+    cursor = conn.cursor()
+    try:
+        cursor.execute(sql, params)
+        conn.commit()
+        logging.info('------------------------------insert weibo_flightgirl ojbk-----------------------------')
+    except Exception as e:
+        conn.rollback()
+        conn.close()
+        logging.info(e)
         logging.info(params)

@@ -3,7 +3,7 @@ import base64
 import requests
 import redis
 import logging
-from weibo_spider.db.mysql_insert import insert_cookie
+
 import json
 logger = logging.getLogger(__name__)
 # reds=redis.Redis.from_url(REDIS_URL,db=,decode_response=True)

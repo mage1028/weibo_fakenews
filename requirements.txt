@@ -1,0 +1,5 @@
+Scrapy==1.5.0
+PyMySQL==0.7.11
+redis==2.10.6
+requests==2.13.0
+selenium==3.11.0

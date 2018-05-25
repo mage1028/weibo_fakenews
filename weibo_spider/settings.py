@@ -24,8 +24,8 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # redis配置
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
 # 去重过滤器
 # DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
@@ -87,7 +87,8 @@ COOKIES_DEBUG = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'weibo_spider.pipelines.WeiboFakenewsPipeline': 999,
-    'scrapy_redis.pipelines.RedisPipeline': 300
+    'scrapy_redis.pipelines.RedisPipeline': 300,
+    'weibo_spider.pipelines.WeiboImgDownloadPipeline': 800,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -112,4 +113,6 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 REDIS_URL = 'redis://@localhost:6379'
 
-# LOG_FILE  ="scrapylog"
+LOG_FILE = "/hbasestorage/spider/spider_logs/flightgirl_weibo/scrapy.log"
+
+IMAGES_STORE = '/hbasestorage/spider/spider_2018_2_files/flightgirl_weibo/images'
