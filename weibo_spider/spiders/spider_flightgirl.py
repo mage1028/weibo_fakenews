@@ -173,7 +173,11 @@ class FakenewsSpider(scrapy.Spider):
 
         yield copy.deepcopy(item)
 
+
+
+
         # 找到所有评论和转发
+
         # for i in range(1, page_max1 + 1):
         #     url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
         #     yield Request(url=url_comment, callback=self.parse_comments,

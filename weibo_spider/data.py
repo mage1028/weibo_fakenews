@@ -19,11 +19,11 @@ agents = [
     # "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 GTB5",
     # "Mozilla/5.0 (Windows; U; Windows NT 5.1; tr; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8 ( .NET CLR 3.5.30729; .NET4.0E)", ]
 
-# from http.cookies import SimpleCookie
-#
-# str = 'SINAGLOBAL=172.16.118.85_1523584854.870596; SCF=AkPjrDiALONXUrpuUXCYEzbwjBowDuhhYFDr5HbhlmcEGi0780kkGJmk7YHpqEdhzIrIhZ47VVtGuXK-ssrHVOs.; UOR=www.cnblogs.com,v.t,; U_TRS1=00000003.a961350.5adedfa5.786fa820; ULV=1525246115812:1:1:1:117.33.59.151_1525244543.382706:; SGUID=1525246117194_32505117; lxlrttp=1524789408; Apache=111.20.225.134_1526030864.899115; ULOGIN_IMG=gz-9385de74e4e61370257d621911693e9a6032; SUB=_2A253_AQ1DeRhGeBL6FUS8irPyDyIHXVUiHL9rDV_PUNbm9BeLWf2kW9NRw-YvYDhMiWG4jLHEeaKFG7e_0ZqiSh3; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhcFM8z65heQghJJjGrxpm.5NHD95QcSKeNe0zXe0e7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNSo-0S0eEShe0e5tt; ALF=1557768165; sso_info=v02m6alo5qztKWRk5yljpOQpZCToKWRk5iljoOgpZCjnLaNk4y3jLOItIyzjLCJp5WpmYO0to2TjLeMs4i0jLOMsA=='
-# cookie = SimpleCookie(str)
-# y = [{i.key: i.value for i in cookie.values()}]
+from http.cookies import SimpleCookie
+
+str = 'SINAGLOBAL=6052291904347.267.1523584854735; _T_WM=911f60d2fb13c20fc5a50bb11bd447af; YF-Page-G0=b98b45d9bba85e843a07e69c0880151a; YF-V5-G0=3717816620d23c89a2402129ebf80935; _s_tentry=login.sina.com.cn; Apache=786278590073.033.1526887445919; ULV=1526887445971:12:5:1:786278590073.033.1526887445919:1526030864851; YF-Ugrow-G0=8751d9166f7676afdce9885c6d31cd61; WBtopGlobal_register_version=18ecda104816e044; login_sid_t=4277cf0483a3f4f501fc10fe1b6eb7a7; cross_origin_proto=SSL; UOR=www.shangyang.me,widget.weibo.com,login.sina.com.cn; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW98Vb6BMxbNWLW24e2R0L55JpX5K2hUgL.FoeNS0nX1K2fSKz2dJLoI0qLxKnLBKzLB-zLxK.L1KBLBKBLxKqL1K.L1K-LxKML1-2L1hBLxK-LBo5L12qLxK.LBonLBK2t; ALF=1558787098; SSOLoginState=1527251099; SCF=AkPjrDiALONXUrpuUXCYEzbwjBowDuhhYFDr5HbhlmcEJSrxZXU6LJkD-zY1dKQoQTZbwPdvHeOg4XJmsRP32ec.; SUB=_2A252DHDMDeRhGeVJ7FoV-S_Jzj6IHXVVeOUErDV8PUNbmtBeLVbskW9NT8RAC5QHxjqmwggVVzQkpkkWvjGVewfv; SUHB=0WGs7C3caTLg2o; un=18066635323; wvr=6'
+cookie = SimpleCookie(str)
+y = [{i.key: i.value for i in cookie.values()}]
 # str2 = 'SINAGLOBAL=6052291904347.267.1523584854735; _T_WM=911f60d2fb13c20fc5a50bb11bd447af; UOR=www.shangyang.me,widget.weibo.com,login.sina.com.cn; _s_tentry=service.account.weibo.com; Apache=5726147549537.581.1526030864769; ULV=1526030864851:11:4:2:5726147549537.581.1526030864769:1525933126469; login_sid_t=f3587bfad48d7997d66596731cc30036; cross_origin_proto=SSL; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5SwGBuUPQWgY6vLYFjNsLz5JpX5K2hUgL.Foqfe0McSo5pSoB2dJLoIp7LxKML1KBLBKnLxKqL1hnLBoMcSKeNSoq7eKqX; ALF=1557767927; SSOLoginState=1526231928; SCF=AkPjrDiALONXUrpuUXCYEzbwjBowDuhhYFDr5HbhlmcEa1MmKXF0GtMXwpN-BCdtSjqveVGfLsSctFenBzADO5g.; SUB=_2A253_AMoDeRhGeBL6FUX9i7NzTiIHXVUiHPgrDV8PUNbmtBeLXf9kW9NRw-Y2B_Hbc_nGhXBArSXAVbKv8ylDKO5; SUHB=0h15_17Kiy9Swf; un=13859991449; wvr=6'
 # cookie = SimpleCookie(str2)
 # z = [{i.key: i.value for i in cookie.values()}]

@@ -24,8 +24,8 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # redis配置
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
 # #去重过滤器
 # DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
@@ -40,7 +40,7 @@ ROBOTSTXT_OBEY = False
 DOWNLOAD_DELAY = 2.5
 RANDOMIZE_DOWNLOAD_DELAY = True
 COOKIES_ENABLED = True
-COOKIES_DEBUG = True
+
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -87,7 +87,6 @@ COOKIES_DEBUG = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'weibo_spider.pipelines.WeiboFakenewsPipeline': 999,
-    'scrapy_redis.pipelines.RedisPipeline': 300,
     'weibo_spider.pipelines.WeiboImgDownloadPipeline': 800,
 }
 
@@ -113,7 +112,7 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 REDIS_URL = 'redis://@localhost:6379'
 #
-
+#
 LOG_FILE = "/hbasestorage/spider/spider_logs/flightgirl_weibo/scrapy.log"
 
 IMAGES_STORE = '/hbasestorage/spider/spider_2018_2_files/flightgirl_weibo/images'
