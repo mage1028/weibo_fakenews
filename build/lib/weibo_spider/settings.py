@@ -24,10 +24,10 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # redis配置
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
-# #去重过滤器
+# 去重过滤器
 # DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 
@@ -112,7 +112,6 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 REDIS_URL = 'redis://@localhost:6379'
-#
 
 LOG_FILE = "/hbasestorage/spider/spider_logs/flightgirl_weibo/scrapy.log"
 

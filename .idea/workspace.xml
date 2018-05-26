@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="646738e0-9728-4421-bd03-3a0f031b8222" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twistd.pid" beforeDir="false" afterPath="$PROJECT_DIR$/twistd.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/db/mysql_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/db/mysql_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,12 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Weibo_Spider$FLIGHT.coverage" NAME="FLIGHT Coverage Results" MODIFIED="1527227562620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weibo_Spider$FLIGHT.coverage" NAME="FLIGHT Coverage Results" MODIFIED="1527313255624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weibo_Spider$mysql_create.coverage" NAME="mysql_create Coverage Results" MODIFIED="1527229225761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_spider/db" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$mysql_insert.coverage" NAME="mysql_insert Coverage Results" MODIFIED="1525509450032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/db" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$login2.coverage" NAME="login2 Coverage Results" MODIFIED="1525695299278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/login" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$FAKE__1_.coverage" NAME="FAKE (1) Coverage Results" MODIFIED="1525788003515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weibo_Spider$FAKE.coverage" NAME="FAKE Coverage Results" MODIFIED="1527076913402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weibo_Spider$FAKE.coverage" NAME="FAKE Coverage Results" MODIFIED="1527255763689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$main.coverage" NAME="main Coverage Results" MODIFIED="1527054007141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fakenews" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$spider.coverage" NAME="spider Coverage Results" MODIFIED="1526899544630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/spiders" />
     <SUITE FILE_PATH="coverage/weibo_fakenews$redis.coverage" NAME="redis Coverage Results" MODIFIED="1527056279371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo_fakenews/db" />
@@ -54,13 +60,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spider_flightgirl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-232">
+              <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#193#235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,26 +75,44 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo_spider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+            <state relative-caret-position="459">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapylog" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/scrapylog">
+      <file leaf-file-name="mysql_insert.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_insert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapy.cfg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="189">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#168#181#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spider_flightgirl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,64 +120,10 @@
       <file leaf-file-name="spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/login/login1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fefreshall.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/fefreshall.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myredis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/db/myredis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dealtime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/dealtime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -241,20 +211,20 @@
         <option value="$PROJECT_DIR$/weibo_fakenews/fresh_cookies.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/test.py" />
         <option value="$PROJECT_DIR$/weibo_fakenews/spiders/spider_flightgirl.py" />
-        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider.py" />
         <option value="$PROJECT_DIR$/weibo_spider/spiders/str.py" />
         <option value="$PROJECT_DIR$/weibo_spider/items.py" />
         <option value="$PROJECT_DIR$/weibo_spider/login/login1.py" />
         <option value="$PROJECT_DIR$/weibo_spider/db/mysql_create.py" />
         <option value="$PROJECT_DIR$/weibo_spider/data.py" />
-        <option value="$PROJECT_DIR$/weibo_spider/pipelines.py" />
-        <option value="$PROJECT_DIR$/weibo_spider/settings.py" />
-        <option value="$PROJECT_DIR$/weibo_spider/db/mysql_insert.py" />
-        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" />
         <option value="$PROJECT_DIR$/weibo_spider/fefreshall.py" />
         <option value="$PROJECT_DIR$/weibo_spider/main.py" />
         <option value="$PROJECT_DIR$/weibo_spider/db/myredis.py" />
         <option value="$PROJECT_DIR$/scrapy.cfg" />
+        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider.py" />
+        <option value="$PROJECT_DIR$/weibo_spider/pipelines.py" />
+        <option value="$PROJECT_DIR$/weibo_spider/settings.py" />
+        <option value="$PROJECT_DIR$/weibo_spider/db/mysql_insert.py" />
+        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" />
       </list>
     </option>
   </component>
@@ -362,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.redis">
+  <component name="RunManager" selected="Python.FLIGHT">
     <configuration name="FAKE" type="PythonConfigurationType" factoryName="Python">
       <module name="Weibo_Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -574,13 +544,13 @@
       <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" weight="0.3425641" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32820514" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -627,7 +597,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/weibo_spider/pipelines.py</url>
-          <line>75</line>
+          <line>78</line>
           <option name="timeStamp" value="502" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -655,11 +625,16 @@
           <line>37</line>
           <option name="timeStamp" value="573" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="574" />
+      <option name="time" value="575" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -712,13 +687,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weibo_spider/login/login2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/str.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -858,43 +826,6 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#168#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
-          <folding>
-            <element signature="e#193#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_insert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapylog">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-720" />
@@ -910,19 +841,9 @@
     <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/dealtime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-end-line="19" />
+          <caret line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -944,6 +865,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/scrapylog">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/db/myredis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -954,34 +892,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-102">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+          <folding>
+            <element signature="e#193#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+        <state relative-caret-position="459">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/scrapylog">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_insert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="165">
+          <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#168#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

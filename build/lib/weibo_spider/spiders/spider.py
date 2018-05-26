@@ -8,11 +8,11 @@ import json
 from scrapy.selector import Selector
 from weibo_spider.spiders.str import dealstr, dealcontent
 import random
-from scrapy_redis.spiders import Spider
+
 import logging
 
 
-class FakeNewsSpider(Spider):
+class FakeNewsSpider(scrapy.Spider):
     name = 'fakenews'
     urls = []
     for i in range(1, 2):
@@ -30,7 +30,7 @@ class FakeNewsSpider(Spider):
 
         urls = re.findall(r'show\?rid=\w+', text)
 
-        for i in range(10, 30):
+        for i in range(10, 12):
             url = 'http://service.account.weibo.com/' + urls[i]
 
             yield Request(url=url, callback=self.parse_fake, meta={'url': url})
@@ -180,17 +180,17 @@ class FakeNewsSpider(Spider):
 
         yield item
 
-        #找到所有评论和转发
-        for i in range(1, page_max1 + 1):
-            url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
-            yield Request(url=url_comment, callback=self.parse_comments,
-                          meta={'id': item['id'], 'flag': 'comment'})
-        page_max2 = int(math.ceil(int(item['forwarded_counts']) / 20))
-
-        for i in range(1, page_max2 + 1):
-            url_forwarded = 'https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i,
-                                                                                                              rnd)
-            yield Request(url=url_forwarded, callback=self.parse_comments, meta={'id': item['id'], 'flag': 'forwarded'})
+        # 找到所有评论和转发
+        # for i in range(1, page_max1 + 1):
+        #     url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
+        #     yield Request(url=url_comment, callback=self.parse_comments,
+        #                   meta={'id': item['id'], 'flag': 'comment'})
+        # page_max2 = int(math.ceil(int(item['forwarded_counts']) / 20))
+        #
+        # for i in range(1, page_max2 + 1):
+        #     url_forwarded = 'https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i,
+        #                                                                                                       rnd)
+        #     yield Request(url=url_forwarded, callback=self.parse_comments, meta={'id': item['id'], 'flag': 'forwarded'})
 
     def parse_comments(self, response):
 

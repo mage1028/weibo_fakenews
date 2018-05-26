@@ -14,14 +14,8 @@ import logging
 
 class FakenewsSpider(scrapy.Spider):
     name = 'flight_girl'
-    urls=[]
-    for i in range(11, 13):
-        for j in range(1, 23):
-            begin = str(i) + '-' + str(j)
-            end = str(i) + '-' + str(j + 1)
-            url = 'https://s.weibo.com/weibo/%25E7%25A9%25BA%25E5%25A7%2590%25E6%25BB%25B4%25E6%25BB%25B4&scope=ori&suball=1&timescope=custom:2018-05-{0}:2018-05-{1}&Refer=g&page=1'.format(
-            begin, end)
-            urls.append(url)
+    urls = [
+        'https://s.weibo.com/weibo/%25E7%25A9%25BA%25E5%25A7%2590%25E6%25BB%25B4%25E6%25BB%25B4&scope=ori&suball=1&timescope=custom:2018-05-10-0:2018-05-10-23&Refer=g&page=1']
 
     def start_requests(self):
         for url in self.urls:
@@ -174,17 +168,17 @@ class FakenewsSpider(scrapy.Spider):
         yield copy.deepcopy(item)
 
         # 找到所有评论和转发
-        # for i in range(1, page_max1 + 1):
-        #     url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
-        #     yield Request(url=url_comment, callback=self.parse_comments,
-        #                   meta={'id': item['id'], 'flag': 'comment'})
-        # page_max2 = int(math.ceil(int(item['forwarded_count']) / 20))
-        #
-        # for i in range(1, page_max2 + 1):
-        #     url_forwarded = 'https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i,
-        #                                                                                                       rnd)
-        #     yield Request(url=url_forwarded, callback=self.parse_comments,
-        #                   meta={'id': copy.deepcopy(item['id']), 'flag': copy.deepcopy('forwarded')})
+        for i in range(1, page_max1 + 1):
+            url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
+            yield Request(url=url_comment, callback=self.parse_comments,
+                          meta={'id': item['id'], 'flag': 'comment'})
+        page_max2 = int(math.ceil(int(item['forwarded_count']) / 20))
+
+        for i in range(1, page_max2 + 1):
+            url_forwarded = 'https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i,
+                                                                                                              rnd)
+            yield Request(url=url_forwarded, callback=self.parse_comments,
+                          meta={'id': copy.deepcopy(item['id']), 'flag': copy.deepcopy('forwarded')})
 
     def parse_comments(self, response):
 
