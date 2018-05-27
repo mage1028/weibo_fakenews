@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="646738e0-9728-4421-bd03-3a0f031b8222" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_spider/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_spider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,48 +56,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/settings.py">
+      <file leaf-file-name="spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql_create.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-572" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fefreshall.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/fefreshall.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-946">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spider_flightgirl.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="2835">
+              <caret line="200" column="35" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_create.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -194,13 +167,13 @@
         <option value="$PROJECT_DIR$/weibo_spider/main.py" />
         <option value="$PROJECT_DIR$/weibo_spider/db/myredis.py" />
         <option value="$PROJECT_DIR$/scrapy.cfg" />
-        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider.py" />
         <option value="$PROJECT_DIR$/weibo_spider/db/mysql_insert.py" />
         <option value="$PROJECT_DIR$/weibo_spider/pipelines.py" />
         <option value="$PROJECT_DIR$/weibo_spider/data.py" />
         <option value="$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py" />
         <option value="$PROJECT_DIR$/weibo_spider/middlewares.py" />
         <option value="$PROJECT_DIR$/weibo_spider/settings.py" />
+        <option value="$PROJECT_DIR$/weibo_spider/spiders/spider.py" />
       </list>
     </option>
   </component>
@@ -512,13 +485,13 @@
       <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" weight="0.3425641" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32820514" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -533,25 +506,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32923076" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" visible="true" weight="0.3425641" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935324" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3283582" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50061053" side_tool="true" weight="0.3425641" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,16 +540,6 @@
           <url>file://$PROJECT_DIR$/weibo_spider/pipelines.py</url>
           <line>80</line>
           <option name="timeStamp" value="502" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo_spider/spiders/spider.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="503" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo_spider/spiders/spider.py</url>
-          <line>122</line>
-          <option name="timeStamp" value="504" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/weibo_spider/pipelines.py</url>
@@ -700,106 +663,30 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/imgs/full/aaa6cfc20925972e13c74f9edc0937da49bd0712.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/39d5bfedb558e3d22d07b3793683453dbe67f2b7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/615b5d869497c5bf170595cd4ba9bc2167bf0af9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/f7ddd4390a5e42025e9b738bd86efd46a4a40d84.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/ff29821425a2de3457b3946841b4dffbdccce754.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/62d862b1986ef4838be220354006334123c490a4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/8d121abddae288eb7387c210210c85b01a571f47.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/86ec849b4f1f97184e2b0caab7d3dd18b78d365a.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/8830e1fd9b3ac854d2e812cc96d30ba5d4449111.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/full/bee6e178624c792ee806e8adc13443296513e7f0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238080803688162-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082406584578-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082536810974-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082536810974-3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238079277520251-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238079277520251-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238079277520251-5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082008375531-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twistd.pid">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_select.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="2835">
+          <caret line="200" column="35" lean-forward="true" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238079277520251-6.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082536810974-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238082930436359-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238037758630788-3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238037758630788-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4238027725911551-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4237997044241330-3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4237997044241330-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/4237997044241330-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/twistd.pid" />
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/login/login1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -812,9 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,9 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -835,28 +716,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/myredis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/lib/weibo_spider/spiders/spider_flightgirl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapylog">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib/weibo_spider/spiders/spider_flightgirl.py" />
     <entry file="file://$PROJECT_DIR$/weibo_spider/scrapylog">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -878,23 +738,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3540">
-          <caret line="236" column="18" lean-forward="true" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="26" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_insert.py">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-502" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/fefreshall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -908,53 +774,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/data.py">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_insert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="26" selection-end-line="30" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/middlewares.py">
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/myredis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="-937">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_spider/fefreshall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-946">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="600">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider_flightgirl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="303">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/spiders/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="200" column="35" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_spider/db/mysql_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
         </state>
       </provider>
     </entry>

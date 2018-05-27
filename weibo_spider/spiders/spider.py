@@ -15,7 +15,7 @@ import logging
 class FakeNewsSpider(Spider):
     name = 'fakenews'
     urls = []
-    for i in range(1, 2):
+    for i in range(1, 100):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])
 
     def start_requests(self):
@@ -61,7 +61,7 @@ class FakeNewsSpider(Spider):
                 content = dealstr(content)
                 informers_content.append(content)
 
-            except :
+            except:
                 try:
                     content = re.findall(r'/a>[\s\S]*?</div>', content)[0].strip('/a>').strip('</div>')
                     content = dealstr(content)
@@ -180,7 +180,7 @@ class FakeNewsSpider(Spider):
 
         yield item
 
-        #找到所有评论和转发
+        # 找到所有评论和转发
         for i in range(1, page_max1 + 1):
             url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
             yield Request(url=url_comment, callback=self.parse_comments,

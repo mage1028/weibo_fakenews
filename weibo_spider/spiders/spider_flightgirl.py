@@ -15,13 +15,13 @@ import logging
 class FakenewsSpider(scrapy.Spider):
     name = 'flight_girl'
     urls=[]
-    for i in range(11, 13):
-        for j in range(1, 23):
-            begin = str(i) + '-' + str(j)
-            end = str(i) + '-' + str(j + 1)
-            url = 'https://s.weibo.com/weibo/%25E7%25A9%25BA%25E5%25A7%2590%25E6%25BB%25B4%25E6%25BB%25B4&scope=ori&suball=1&timescope=custom:2018-05-{0}:2018-05-{1}&Refer=g&page=1'.format(
-            begin, end)
-            urls.append(url)
+    for i in range(13, 20):
+
+        begin = str(i) + '-' + '0'
+        end = str(i) + '-' + '23'
+        url = 'https://s.weibo.com/weibo/%25E7%25A9%25BA%25E5%25A7%2590%25E6%25BB%25B4%25E6%25BB%25B4&scope=ori&suball=1&timescope=custom:2018-05-{0}:2018-05-{1}&Refer=g&page=1'.format(
+        begin, end)
+        urls.append(url)
 
     def start_requests(self):
         for url in self.urls:
