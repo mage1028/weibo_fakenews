@@ -15,7 +15,7 @@ import logging
 class FakeNewsSpider(Spider):
     name = 'fakenews'
     urls = []
-    for i in range(1, 100):
+    for i in range(1, 300):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])
 
     def start_requests(self):

@@ -113,6 +113,7 @@ ITEM_PIPELINES = {
 REDIS_URL = 'redis://@localhost:6379'
 #
 #
+# LOG_FILE = "/hbasestorage/spider/spider_logs/fakenews_weibo/scrapy.log"
 LOG_FILE = "/hbasestorage/spider/spider_logs/fakenews_weibo/scrapy.log"
 
 IMAGES_STORE = '/hbasestorage/spider/spider_2018_2_files/flightgirl_weibo/images'
