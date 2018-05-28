@@ -15,7 +15,7 @@ import logging
 class FakeNewsSpider(Spider):
     name = 'fakenews'
     urls = []
-    for i in range(1, 300):
+    for i in range(1774, 1775):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])
 
     def start_requests(self):
@@ -30,7 +30,7 @@ class FakeNewsSpider(Spider):
 
         urls = re.findall(r'show\?rid=\w+', text)
 
-        for i in range(10, 30):
+        for i in range(11, 12):
             url = 'http://service.account.weibo.com/' + urls[i]
 
             yield Request(url=url, callback=self.parse_fake, meta={'url': url})
@@ -40,7 +40,7 @@ class FakeNewsSpider(Spider):
         item = WeiboFakenewsItem()
         informers = []
         informers_content = []
-
+        item['url']=response.meta['url']
         # item['url'] = response.meta['url']
         text = response.text
 
@@ -101,7 +101,8 @@ class FakeNewsSpider(Spider):
             item['forwarded_count'] = 0
             item['comment_count'] = 0
             item['like_count'] = 0
-            item['informants_time'] = '2000-01-01 00:00'
+            if not informants_time:
+                item['informants_time'] = '2000-01-01 00:00'
             yield item
 
     def parse_author(self, response):

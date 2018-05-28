@@ -37,7 +37,7 @@ LOG_ENABLED = True
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
-DOWNLOAD_DELAY = 2.5
+DOWNLOAD_DELAY = 2.3
 RANDOMIZE_DOWNLOAD_DELAY = True
 COOKIES_ENABLED = True
 
@@ -116,4 +116,4 @@ REDIS_URL = 'redis://@localhost:6379'
 # LOG_FILE = "/hbasestorage/spider/spider_logs/fakenews_weibo/scrapy.log"
 LOG_FILE = "/hbasestorage/spider/spider_logs/fakenews_weibo/scrapy.log"
 
-IMAGES_STORE = '/hbasestorage/spider/spider_2018_2_files/flightgirl_weibo/images'
+# IMAGES_STORE = '/hbasestorage/spider/spider_2018_2_files/flightgirl_weibo/images'

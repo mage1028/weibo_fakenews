@@ -10,7 +10,8 @@ from scrapy import signals
 from weibo_spider.data import agents
 import re
 import json
-from weibo_spider.db.myredis import del_cookie, getall_cookies,end_spider
+from weibo_spider.db.myredis import del_cookie, getall_cookies, end_spider
+
 
 class CookiesMiddleware(object):
     def process_request(self, request, spider):
@@ -18,7 +19,7 @@ class CookiesMiddleware(object):
         if re.findall(r'//weibo.com/login', url):
             cookie = json.dumps(request.cookies)
             del_cookie(cookie)
-            request=request.replace(url=request.meta['redirect_urls'][0])
+            request = request.replace(url=request.meta['redirect_urls'][0])
         if re.findall(r'//login.sina', url):
             cookie = json.dumps(request.cookies)
             del_cookie(cookie)
@@ -30,14 +31,13 @@ class CookiesMiddleware(object):
         end_spider()
         cookies = getall_cookies()
         cookie = random.choice(cookies)
-        request.cookies = cookie
+        request.cookies =cookie
 
 
 class Random_UA(UserAgentMiddleware):
     def process_request(self, request, spider):
         ua = random.choice(agents)
         request.headers.setdefault('User-Agent', ua)
-
 
 # #
 # class WeiboFakenewsSpiderMiddleware(object):

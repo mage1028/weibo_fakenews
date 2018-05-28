@@ -26,8 +26,9 @@ def insert_fakenews(params):
     informers_content,
     reason,
     content,
-    informants_time)
-    values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    informants_time,
+    url)
+    values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     '''
     conn = connect_fakenews()
     cursor = conn.cursor()
