@@ -76,11 +76,11 @@ class FakeNewsSpider(Spider):
         del people[-1]
         item['informers'] = people
 
-        people_counts = \
+        people_count = \
             Selector(text=html).xpath('//span[@class="W_f12 W_textb"]/text()').extract()[
                 0]
 
-        item['informers_counts'] = re.findall(r'\d+', people_counts)[0]
+        item['informers_count'] = re.findall(r'\d+', people_count)[0]
 
         informants_time = Selector(text=html).xpath('//div[@class="item top"]/p[@class="publisher"]/text()').extract()
         informants_time = ''.join(informants_time).split('发布时间：')[1].split()
@@ -98,9 +98,9 @@ class FakeNewsSpider(Spider):
             item['content'] = backup
             a = str(random.randint(0, 99999999))
             item['id'] = '999999999' + a
-            item['forwarded_counts'] = 0
-            item['comment_counts'] = 0
-            item['like_counts'] = 0
+            item['forwarded_count'] = 0
+            item['comment_count'] = 0
+            item['like_count'] = 0
             item['informants_time'] = '2000-01-01 00:00'
             yield item
 
@@ -140,35 +140,35 @@ class FakeNewsSpider(Spider):
 
         # 处理赞，转发 ，评论
         try:
-            forwarded_counts = re.findall(r'<em>[\s\S]*?em>', text)[4].lstrip('<em>').split('<')[0]
-            if forwarded_counts == '转发':
-                forwarded_counts = '0'
-            item['forwarded_counts'] = forwarded_counts
+            forwarded_count = re.findall(r'<em>[\s\S]*?em>', text)[4].lstrip('<em>').split('<')[0]
+            if forwarded_count == '转发':
+                forwarded_count = '0'
+            item['forwarded_count'] = forwarded_count
         except:
-            forwarded_counts = re.findall(r'<em>[\s\S]*?em>', text)[1].lstrip('<em>').split('<')[0]
-            if forwarded_counts == '转发':
-                forwarded_counts = '0'
-            item['forwarded_counts'] = forwarded_counts
+            forwarded_count = re.findall(r'<em>[\s\S]*?em>', text)[1].lstrip('<em>').split('<')[0]
+            if forwarded_count == '转发':
+                forwarded_count = '0'
+            item['forwarded_count'] = forwarded_count
         try:
-            comment_counts = re.findall(r'<em>[\s\S]*?em>', text)[5].lstrip('<em>').split('<')[0]
-            if comment_counts == '评论':
-                comment_counts = '0'
-            item['comment_counts'] = comment_counts
+            comment_count = re.findall(r'<em>[\s\S]*?em>', text)[5].lstrip('<em>').split('<')[0]
+            if comment_count == '评论':
+                comment_count = '0'
+            item['comment_count'] = comment_count
         except:
-            comment_counts = re.findall(r'<em>[\s\S]*?em>', text)[2].lstrip('<em>').split('<')[0]
-            if comment_counts == '评论':
-                comment_counts = '0'
-            item['comment_counts'] = comment_counts
+            comment_count = re.findall(r'<em>[\s\S]*?em>', text)[2].lstrip('<em>').split('<')[0]
+            if comment_count == '评论':
+                comment_count = '0'
+            item['comment_count'] = comment_count
         try:
-            like_counts = re.findall(r'<em>[\s\S]*?em>', text)[6].lstrip('<em>').split('<')[0]
-            if like_counts == '赞':
-                like_counts = '0'
-            item['like_counts'] = like_counts
+            like_count = re.findall(r'<em>[\s\S]*?em>', text)[6].lstrip('<em>').split('<')[0]
+            if like_count == '赞':
+                like_count = '0'
+            item['like_count'] = like_count
         except:
-            like_counts = re.findall(r'<em>[\s\S]*?em>', text)[3].lstrip('<em>').split('<')[0]
-            if like_counts == '赞':
-                like_counts = '0'
-            item['like_counts'] = like_counts
+            like_count = re.findall(r'<em>[\s\S]*?em>', text)[3].lstrip('<em>').split('<')[0]
+            if like_count == '赞':
+                like_count = '0'
+            item['like_count'] = like_count
         # 处理url
         id = re.findall(r'mblog&act=\w+', text)[0].lstrip('mblog&act=')
         item['id'] = id
@@ -176,7 +176,7 @@ class FakeNewsSpider(Spider):
         # 处理时间戳 id page
         tick = time.time()
         rnd = int(tick * 1000)
-        page_max1 = int(math.ceil(int(item['comment_counts']) / 20))
+        page_max1 = int(math.ceil(int(item['comment_count']) / 20))
 
         yield item
 
@@ -185,7 +185,7 @@ class FakeNewsSpider(Spider):
             url_comment = 'https://weibo.com/aj/v6/comment/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i, rnd)
             yield Request(url=url_comment, callback=self.parse_comments,
                           meta={'id': item['id'], 'flag': 'comment'})
-        page_max2 = int(math.ceil(int(item['forwarded_counts']) / 20))
+        page_max2 = int(math.ceil(int(item['forwarded_count']) / 20))
 
         for i in range(1, page_max2 + 1):
             url_forwarded = 'https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id={0}&page={1}&__rnd={2}'.format(id, i,
@@ -228,10 +228,10 @@ class FakeNewsSpider(Spider):
         if item['flag'] == 'comment':
             item['time'] = Selector(text=html).xpath('//*[@class="WB_from S_txt2"]/text()').extract()
 
-        item['like_counts'] = Selector(text=html).xpath('////span[@node-type="like_status"]/em[2]/text()').extract()
-        lens = len(item['like_counts'])
+        item['like_count'] = Selector(text=html).xpath('////span[@node-type="like_status"]/em[2]/text()').extract()
+        lens = len(item['like_count'])
 
         for i in range(0, lens):
-            item['like_counts'][i] = item['like_counts'][i].replace('赞', '0')
+            item['like_count'][i] = item['like_count'][i].replace('赞', '0')
 
         yield item
