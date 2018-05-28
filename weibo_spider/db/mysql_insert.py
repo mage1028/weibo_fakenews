@@ -60,7 +60,7 @@ def insert_comments_flightgirl(params):
         logging.info(params)
 
 def insert_comments_fakenews(params):
-    sql = '''insert into Comments(id,flag,author,author_comment,like_count,comment_time) 
+    sql = '''insert into comments(id,flag,author,author_comment,like_count,comment_time) 
     values (%s,%s,%s,%s,%s,%s)
     '''
     conn = connect_fakenews()

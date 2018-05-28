@@ -109,9 +109,11 @@ class FakeNewsSpider(Spider):
         text = response.text
         item = AuthorItem()
 
-        author_data = re.findall(r'strong class=\\"W_f1\d\\">\d+<', text)
-
         item['name'] = response.meta['name']
+
+        author_data = re.findall(r'strong class=\\"W_f1\d\\">\d+<', text)
+        front = re.findall(r'strong class=\\"W_f1\d\\">', author_data[0])[0]
+        item['follow_count'] = author_data[0].strip(front).strip('<')
         if item['follow_count'] == '':
             item['follow_count'] = '0'
         front = re.findall(r'strong class=\\"W_f1\d\\">', author_data[1])[0]
