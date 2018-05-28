@@ -112,13 +112,16 @@ class FakeNewsSpider(Spider):
         author_data = re.findall(r'strong class=\\"W_f1\d\\">\d+<', text)
 
         item['name'] = response.meta['name']
-        item['id'] = response.meta['id']
-        front = re.findall(r'strong class=\\"W_f1\d\\">', author_data[0])[0]
-        item['follow_count'] = author_data[0].strip(front).strip('<')
+        if item['follow_count'] == '':
+            item['follow_count'] = '0'
         front = re.findall(r'strong class=\\"W_f1\d\\">', author_data[1])[0]
         item['follower_count'] = author_data[1].strip(front).strip('<')
+        if item['follower_count'] == '':
+            item['follower_count'] = '0'
         front = re.findall(r'strong class=\\"W_f1\d\\">', author_data[2])[0]
         item['weibo_count'] = author_data[2].strip(front).strip('<')
+        if item['weibo_count'] == '':
+            item['weibo_count'] = '0'
         item['description'] = response.xpath('//meta[@name="description"]/@content').extract()[0].strip(
             '新浪微博，随时随地分享身边的新鲜事儿。')
         yield item
