@@ -40,7 +40,7 @@ class FakeNewsSpider(Spider):
         item = WeiboFakenewsItem()
         informers = []
         informers_content = []
-        item['url']=response.meta['url']
+        item['url'] = response.meta['url']
         # item['url'] = response.meta['url']
         text = response.text
 
@@ -109,6 +109,7 @@ class FakeNewsSpider(Spider):
         text = response.text
         item = AuthorItem()
 
+        item['id'] = response.meta['id']
         item['name'] = response.meta['name']
 
         author_data = re.findall(r'strong class=\\"W_f1\d\\">\d+<', text)
