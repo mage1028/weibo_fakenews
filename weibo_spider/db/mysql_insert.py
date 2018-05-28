@@ -15,7 +15,7 @@ def connect_fakenews():
 
 
 def insert_fakenews(params):
-    sql = '''insert into weibo_spider(id,
+    sql = '''insert into weibo_fakenews(id,
     informers,
     informers_count,
     informants,

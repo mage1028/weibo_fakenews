@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="646738e0-9728-4421-bd03-3a0f031b8222" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_spider/spiders/spider.py" afterDir="false" />
-    </list>
+    <list default="true" id="646738e0-9728-4421-bd03-3a0f031b8222" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weibo_spider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-903">
+            <state relative-caret-position="485">
               <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="e#193#235#0" expanded="true" />
@@ -140,15 +138,15 @@
       <find>f</find>
       <find>Lo</find>
       <find>Log</find>
-      <find />
+      <find>too long</find>
       <find>json</find>
       <find>weibo</find>
       <find>weibo_fakenews</find>
       <find>count</find>
       <find>author</find>
-      <find>counts</find>
       <find>page=3</find>
       <find>yield</find>
+      <find>counts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -517,8 +515,8 @@
       <window_info anchor="bottom" x="-1920" y="75" width="1878" height="1005" id="Run" order="12" sideWeight="0.4993895" weight="0.3425641" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771673" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32820514" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771673" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
@@ -880,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_spider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-903">
+        <state relative-caret-position="485">
           <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding>
             <element signature="e#193#235#0" expanded="true" />
