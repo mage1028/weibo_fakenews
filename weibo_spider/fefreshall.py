@@ -3,7 +3,7 @@
 import base64
 import requests
 import redis
-
+import time
 import json
 import logging
 
@@ -131,7 +131,11 @@ def fresh_allcookies():
 
 
 if __name__ == '__main__':
-    fresh_allcookies()
+    while 1:
+
+        time.sleep(64800)
+        fresh_allcookies()
+
 
 # def select_allcookie():
 # insert_account('18066635323', 'seaways220')
