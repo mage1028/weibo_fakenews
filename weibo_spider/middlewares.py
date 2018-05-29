@@ -19,15 +19,12 @@ class CookiesMiddleware(object):
         if re.findall(r'//weibo.com/login', url):
             cookie = json.dumps(request.cookies)
             del_cookie(cookie)
-            request = request.replace(url=request.meta['redirect_urls'][0])
         if re.findall(r'//login.sina', url):
             cookie = json.dumps(request.cookies)
             del_cookie(cookie)
-            request = request.replace(url=request.meta['redirect_urls'][0])
         if re.findall(r'//weibo.com/signup', url):
             cookie = json.dumps(request.cookies)
             del_cookie(cookie)
-            request = request.replace(url=request.meta['redirect_urls'][0])
         end_spider()
         cookies = getall_cookies()
         cookie = random.choice(cookies)
