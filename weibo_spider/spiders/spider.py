@@ -15,7 +15,7 @@ import logging
 class FakeNewsSpider(Spider):
     name = 'fakenews'
     urls = []
-    for i in range(222, 500):
+    for i in range(351, 600):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])
 
     def start_requests(self):
@@ -30,7 +30,7 @@ class FakeNewsSpider(Spider):
 
         urls = re.findall(r'show\?rid=\w+', text)
 
-        for i in range(10, 30):
+        for i in range(12, 13):
             url = 'http://service.account.weibo.com/' + urls[i]
 
             yield Request(url=url, callback=self.parse_fake, meta={'url': url})
@@ -57,7 +57,7 @@ class FakeNewsSpider(Spider):
 
             try:
                 people.append(re.findall(r'blank\">[\s\S]*?</a>', content)[0].strip('blank\">').strip('</a>'))
-                content = Selector(text=html).xpath('//*[@class="con"]/input/@value').extract()[0]
+                content = Selector(text=content).xpath('//*[@class="con"]/input/@value').extract()[0]
                 content = dealstr(content)
                 informers_content.append(content)
 

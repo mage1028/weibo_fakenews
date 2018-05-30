@@ -28,7 +28,7 @@ class CookiesMiddleware(object):
         end_spider()
         cookies = getall_cookies()
         cookie = random.choice(cookies)
-        request.cookies =cookie
+        request.cookies = cookie
 
 
 class Random_UA(UserAgentMiddleware):
