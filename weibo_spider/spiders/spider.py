@@ -15,7 +15,7 @@ import logging
 class FakeNewsSpider(Spider):
     name = 'fakenews'
     urls = []
-    for i in range(600, 1000):
+    for i in range(322, 1000):
         urls.append(['https://service.account.weibo.com/?type=5&status=4&page={0}'.format(i)])
 
     def start_requests(self):
@@ -30,7 +30,7 @@ class FakeNewsSpider(Spider):
 
         urls = re.findall(r'show\?rid=\w+', text)
 
-        for i in range(12, 13):
+        for i in range(10, 30):
             url = 'http://service.account.weibo.com/' + urls[i]
 
             yield Request(url=url, callback=self.parse_fake, meta={'url': url})
