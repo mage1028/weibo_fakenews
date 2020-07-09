@@ -9,17 +9,16 @@ def connect_flightgirl():
 
 
 def connect_fakenews():
-    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='fakenewsb', port=3306,
+    db = pymysql.connect(host='39.101.222.120', user='root', password='Football9668#', db='weibo', port=3306,
                          charset='utf8mb4')
     return db
 
 
 def insert_fakenews(params):
-    sql = '''insert into weibo_fakenews(id,
+    sql = '''insert into weibo_spider(id,
     informers,
     informers_count,
     informants,
-    
     forwarded_count,
     comment_count,
     like_count,

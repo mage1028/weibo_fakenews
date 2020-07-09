@@ -15,20 +15,25 @@ from weibo_spider.db.myredis import del_cookie, getall_cookies, end_spider
 
 class CookiesMiddleware(object):
     def process_request(self, request, spider):
-        url = request.url
-        if re.findall(r'//weibo.com/login', url):
-            cookie = json.dumps(request.cookies)
-            del_cookie(cookie)
-        if re.findall(r'//login.sina', url):
-            cookie = json.dumps(request.cookies)
-            del_cookie(cookie)
-        if re.findall(r'//weibo.com/signup', url):
-            cookie = json.dumps(request.cookies)
-            del_cookie(cookie)
-        end_spider()
-        cookies = getall_cookies()
-        cookie = random.choice(cookies)
-        request.cookies = cookie
+        pass
+        # url = request.url
+        # if re.findall(r'//weibo.com/login', url):
+        #     cookie = json.dumps(request.cookies)
+        #     del_cookie(cookie)
+        # if re.findall(r'//login.sina', url):
+        #     cookie = json.dumps(request.cookies)
+        #     del_cookie(cookie)
+        # if re.findall(r'//weibo.com/signup', url):
+        #     cookie = json.dumps(request.cookies)
+        #     del_cookie(cookie)
+        # end_spider()
+        # cookies = getall_cookies()
+        # cookie = random.choice(cookies)
+        # request.cookies = cookie
+        
+        # cookie="SINAGLOBAL=2548624436092.2637.1577608974270; login_sid_t=d151efbff5bb1496d6de7d5fdb0946e2; cross_origin_proto=SSL; _s_tentry=-; Apache=1188468703273.8105.1588270614259; ULV=1588270614266:6:1:1:1188468703273.8105.1588270614259:1586852654132; SSOLoginState=1590326292; un=18066635323; SCF=AstiSN-bn44ABUkezJ24AlMbj2H1nEzWxoZ6jtf_UbI5xxBzxs5LQqloqBUtKEP4Jd59tBGBwjgEa9lQ4AjBJ0Q.; SUB=_2A25z-G6VDeRhGeVJ7FoV-S_Jzj6IHXVQjMddrDV8PUJbmtANLWHhkW9NT8RACzCXaJX-JPEraElrzOP4Dfnkd_4N; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WW98Vb6BMxbNWLW24e2R0L55JpX5K-hUgL.FoeNS0nX1K2fSKz2dJLoI0qLxKnLBKzLB-zLxK.L1KBLBKBLxKqL1K.L1K-LxKML1-2L1hBLxK-LBo5L12qLxK.LBonLBK2t; SUHB=0jB4_VGTqCnOqg; ALF=1625117251; wvr=6; UOR=,,login.sina.com.cn; webim_unReadCount=%7B%22time%22%3A1593586099318%2C%22dm_pub_total%22%3A0%2C%22chat_group_client%22%3A0%2C%22chat_group_notice%22%3A0%2C%22allcountNum%22%3A0%2C%22msgbox%22%3A0%7D"        
+        # request.headers.setdefault("cookie",cookie)
+
 
 
 class Random_UA(UserAgentMiddleware):
@@ -36,86 +41,3 @@ class Random_UA(UserAgentMiddleware):
         ua = random.choice(agents)
         request.headers.setdefault('User-Agent', ua)
 
-# #
-# class WeiboFakenewsSpiderMiddleware(object):
-#     # Not all methods need to be defined. If a method is not defined,
-#     # scrapy acts as if the spider middleware does not modify the
-#     # passed objects.
-#
-#     @classmethod
-#     def from_crawler(cls, crawler):
-#         # This method is used by Scrapy to create your spiders.
-#         s = cls()
-#         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
-#         return s
-#
-#     def process_spider_input(self, response, spider):
-#         # Called for each response that goes through the spider
-#         # middleware and into the spider.
-#
-#         # Should return None or raise an exception.
-#         return None
-#
-#     def process_spider_output(self, response, result, spider):
-#         # Called with the results returned from the Spider, after
-#         # it has processed the response.
-#
-#         # Must return an iterable of Request, dict or Item objects.
-#         for i in result:
-#             yield i
-#
-#     def process_spider_exception(self, response, exception, spider):
-#         # Called when a spider or process_spider_input() method
-#         # (from other spider middleware) raises an exception.
-#
-#         # Should return either None or an iterable of Response, dict
-#         # or Item objects.
-#         pass
-#
-#     def process_start_requests(self, start_requests, spider):
-#         # Called with the start requests of the spider, and works
-#         # similarly to the process_spider_output() method, except
-#         # that it doesn’t have a response associated.
-#
-#         # Must return only requests (not items).
-#         for r in start_requests:
-#             yield r
-#
-#     def spider_opened(self, spider):
-#         spider.logger.info('Spider opened: %s' % spider.name)
-#
-#
-# class WeiboFakenewsDownloaderMiddleware(object):
-#     # Not all methods need to be defined. If a method is not defined,
-#     # scrapy acts as if the downloader middleware does not modify the
-#     # passed objects.
-#
-#     @classmethod
-#     def from_crawler(cls, crawler):
-#         # This method is used by Scrapy to create your spiders.
-#         s = cls()
-#         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
-#         return s
-#
-#     def process_request(self, request, spider):
-#
-#         return None
-#
-#     def process_response(self, request, response, spider):
-#
-#         # 删除无效cookie
-#
-#         return response
-#
-#     def process_exception(self, request, exception, spider):
-#         # Called when a download handler or a process_request()
-#         # (from other downloader middleware) raises an exception.
-#
-#         # Must either:
-#         # - return None: continue processing this exception
-#         # - return a Response object: stops process_exception() chain
-#         # - return a Request object: stops process_exception() chain
-#         pass
-#
-#     def spider_opened(self, spider):
-#         spider.logger.info('Spider opened: %s' % spider.name)

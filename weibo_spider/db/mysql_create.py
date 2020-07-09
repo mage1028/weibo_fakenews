@@ -2,7 +2,7 @@ import pymysql
 
 
 def connect():
-    db = pymysql.connect(host='192.168.100.103', user='root', password='root', db='Weibo_Flightgirl_Spider', port=3306,
+    db = pymysql.connect(host='39.101.222.120', user='root', password='Football9668#', db='weibo', port=3306,
                          charset='utf8mb4')
     return db
 
@@ -111,7 +111,7 @@ def addTable_weiboFG():
         conn.rollback()  # 回滚
         conn.close()
 if __name__ == '__main__':
-
+    addTable_weibo()
     addTable_comments()
     addTable_author()
     addTable_weiboFG()

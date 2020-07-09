@@ -1,5 +1,4 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
+
 import base64
 import requests
 import redis
@@ -126,13 +125,8 @@ def getoneCookies(account, password):
 
 
 if __name__ == '__main__':
+  
     fresh_cookie()
+#insert_account('18066635323', 'seaways220')
 
-# def select_allcookie():
-# insert_account('18066635323', 'seaways220')
-# insert_account('16144606536', 'add38853G')
-# insert_account('13859991449', 'axd81075D')
-# insert_account('16417933166', 'agd11070L')异常
-# insert_account('18813663191', 'axd88201w')异常
-# insert_account('17887004042', 'aCd70552m')异常
 # insert_account('13609249748','xuanbaobao')
